@@ -1,5 +1,5 @@
 
-# Does Quality Journalism Orwell's Rules of Writing?
+# Does Quality Journalism Follow Orwell's Rules of Writing?
 
 
 A Natural Language Processing final project by Michelle Carney, Gabe Nicholas, Sayan Sanyal, and Natasha Timakova.
