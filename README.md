@@ -24,7 +24,18 @@ Below are outlines of how we will measure each of Orwell's first five rules, who
 
 ### Rule 1: Finding Common Metaphors and Similes
 
-*Insert discussion here*
+Similes are a type of comparisons, which, like metaphors, involve the comparison of one thing with another thing of a different kind and is used to make a description more emphatic or vivid. However, unlike metaphors, similes have specific recognizable patterns. Most often, patterns with words “like” or “as” are used. For example, “**as** brave **as** a lion,” “they were **like** two hummingbirds.” But *like* could be a verb, a noun or a preposition, depending on the context. Consider this example: “I feel *like* something is wrong.” How will we distinguish between all these uses?
+
+#### Strategy
+
+Our strategy is two-fold. First, we will extract all similes-like constructions from the target corpora. Second, we’ll use a list of trite similes to match it with the extracted ones and determine the percent of banal comparisons that the target corpus contains.
+To train our deterministic classifier (“pattern matcher”), we’ll create a pattern for similes recognition and train it on The VU Amsterdam Metaphor Corpus. The corpus annotated for similes and metaphors and comprises 16 202 sentences and 236 423 tokens. In this corpus, similes are annotated with mFlag (metaphor flag) tags, among which tags “like” and “as” are the most popular. Unfortunately, the corpus has only 57 “like” and 28 “as”, so our training set will be quite limited. In order to not miss a simile, we will tune our classifier so it had low precision and high recall (that is, we will grab some irrelevant stuff, but won’t miss many relevant similes). Later, this imperfection will not matter, since we’ll be looking specifically for trite similes.
+
+After training a pattern matcher on the Amsterdam Metaphor Corpus, we’ll apply it to two different corpora: our Pulitzer Prize winning texts and a Reuters corpus. In parallel, we’ll fetch the list of trite similes and create bags of words (one for each simile) out of it. These bags of words are then matched to our target text, as well as Reuters corpus for comparison. In order to spot in our journalist texts not only similes, repeated word-for-word from our trite similes list, but also their variations, we’ll tune our bag of words matching algorithm so that it accepts a 70-80% match too.
+
+#### Expected outcome
+
+It is possible that some “likes” and “as” used not in the context of comparison will pass through our double filter of a pattern matcher and bag of words matcher, but it shouldn’t be a big percent. We expect to see fewer trite similes in Pulitzer Prize winning texts then in Reuters corpus, for the latter is not considered to be an epitome of a writing style. 
 
 ### Rule 2: Synonym Replaceability and Readability
 
