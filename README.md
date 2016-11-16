@@ -1,4 +1,4 @@
-# Does Quality Journalism Follow Orwell's Rules of Writing?
+# Detecting Orwell's Rules of Writing
 
 
 A Natural Language Processing final project by Michelle Carney, Gabe Nicholas, Sayan Sanyal, and Natasha Timakova.
@@ -15,9 +15,7 @@ In his 1946 essay ["Politics and the English Language,"](http://www.orwell.ru/li
 * Never use a foreign phrase, a scientific word, or a jargon word if you can think of an everyday English equivalent.
 * Break any of these rules sooner than say anything outright barbarous.
 
-
-The overall objective of this project is to explore to what extent Pulitzer Prize winning articles conforms to these heuristics in comparison to other journalistic articles. To achieve this end, we will create a model that assigns quantitative values to each of the Orwell’s metrics. We will apply this model to three corpora: Reuters, the New York Times, and Pulitzer Prize winning articles.
-
+The overall objective of this project is to create a tool that highlights where pieces of text break these rules. To achieve this end, we will create a computational model that can detect each of these attributes. Our end product will provide examples as well as a comparison of how well our model does to human marked up text.
 
 
 
@@ -190,10 +188,9 @@ Orwell's sixth rule is a meta one. It basically says to break any of these rules
 
 
 
-### Scraping
+### Testing the Results
 
-
-A lot of the resources we are looking at - the text for the pulitzer prize winning articles, lists of metaphors and similes are on websites and formatted differently. We will use RoboBrowser in conjunction with BeautifulSoup to extract the text and create .csv datasets that can be resused by all components of our code.
+To test the results, we will mark up our own master test set and see how our model performs against it. We will have one document for rules one, two, four, and five (our operational definition for rule three does not require human comparison.)
 
 
 ## Grading
@@ -209,7 +206,7 @@ Since we have a project that breaks nicely into five parts, we can assign two po
 
 *For 14 November 2016*
 * Sayan will get a working web scraper (with help from Michelle and Gabe.)
-* Sayan will get the STanford Dependency Parser up and running and connected to Python
+* Sayan will get the Stanford Dependency Parser up and running and connected to Python
 * Natasha will have a fully compiled list of similes and will have the Amsterdam Metaphors list in a parsable format
 * Michelle will scrape MetaNet and get it into a parseable format
 * Gabe will compile the list of overused words and phrases and compile it into a parseable format
