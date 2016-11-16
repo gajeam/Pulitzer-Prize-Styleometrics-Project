@@ -38,16 +38,11 @@ Our strategy is two-fold. First, we will extract all similes-like constructions 
 To train our deterministic classifier (“pattern matcher”), we’ll create a pattern for similes recognition and train it on The VU Amsterdam Metaphor Corpus. The corpus annotated for similes and metaphors and comprises 16 202 sentences and 236 423 tokens. In this corpus, similes are annotated with mFlag (metaphor flag) tags, among which tags “like” and “as” are the most popular. Unfortunately, the corpus has only 57 “like” and 28 “as”, so our training set will be quite limited. In order to not miss a simile, we will tune our classifier so it had low precision and high recall (that is, we will grab some irrelevant stuff, but won’t miss many relevant similes). Later, this imperfection will not matter, since we’ll be looking specifically for trite similes.
 
 
-After training a pattern matcher on the Amsterdam Metaphor Corpus, we’ll apply it to two different corpora: our Pulitzer Prize winning texts and a Reuters corpus. In parallel, we’ll fetch the list of trite similes and create bags of words (one for each simile) out of it. These bags of words are then matched to our target text, as well as Reuters corpus for comparison. In order to spot in our journalist texts not only similes, repeated word-for-word from our trite similes list, but also their variations, we’ll tune our bag of words matching algorithm so that it accepts a 70-80% match too.
+After training a pattern matcher on the Amsterdam Metaphor Corpus, we will apply it to our text, fetch a list of trite similes, and create bags of words (one for each simile) out of it. These bags of words are then matched to our target text, as well as Reuters corpus for comparison. In order to spot in our journalist texts not only similes, repeated word-for-word from our trite similes list, but also their variations, we’ll tune our bag of words matching algorithm so that it accepts a 70-80% match too.
 
 
 We would also like to incorporate the newly released [Metanet](https://metaphor.icsi.berkeley.edu/pub/en/index.php/Category:Metaphor) and see if there is a mapping of synsets to the larger metaphor categories. We may be able to see frequency of synsets and if they are being discussed literally within the text (by category or specific words signalling tangibility) or if it is a high probability of it being figurative.
 
-
-#### Expected outcome
-
-
-It is possible that some “likes” and “as” used not in the context of comparison will pass through our double filter of a pattern matcher and bag of words matcher, but it shouldn’t be a big percent. We expect to see fewer trite similes in Pulitzer Prize winning texts then in Reuters corpus, for the latter is not considered to be an epitome of a writing style. 
 
 
 #### Resources
