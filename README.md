@@ -138,7 +138,7 @@ Gabe will be the primary owner of this question.
 #### Strategy
 
 
-We shall use dependency parsers ([Stanford CoreNLP](http://stanfordnlp.github.io/CoreNLP), [SyntaxNet](https://www.tensorflow.org/versions/r0.9/tutorials/syntaxnet/index.html), SpaCy) to tag sentences with dependency attributes. Tags that specify passive voice indicators (nsubjpass (noun , csubjpass, auxpass) can be used to indicate whether a sentence is passive voice or not. We then assign the article a score based on the ratio of sentences that include a passive voice indicator within it. We cross validate using Google’s new SyntaxNet Dependency parser and use the average score as our final measure.
+We shall use dependency parsers ([Stanford CoreNLP](http://stanfordnlp.github.io/CoreNLP), [SyntaxNet](https://www.tensorflow.org/versions/r0.9/tutorials/syntaxnet/index.html), SpaCy) to tag sentences with dependency attributes. Tags that specify passive voice indicators (nsubjpass (noun , csubjpass, auxpass) can be used to indicate whether a sentence is passive voice or not. We will then use this to highlight all of the passive voice sentences in a given article and assign the article a score based on the ratio of sentences that include a passive voice indicator within it. We cross validate using Google’s new SyntaxNet Dependency parser and use the average score as our final measure.
 
 
 #### Resources
@@ -179,14 +179,15 @@ The co-owners are Michelle, Natasha, and Sayan.
 ### Rule 6: The Whole Shebang 
 
 
-Orwell's sixth rule is a meta one. It basically says to break any of these rules if you feel you ought to. In a sense, that is what the entirety of this project is asking—how often do good journalists break these rules? Our end product, a three-by-five matrix of scores for how each of our corpora conform to each of these rules, will essentially address this question.
+Orwell's sixth rule is a meta one. It basically says to break any of these rules if you feel you ought to. In a sense, that is what the entirety of this project is asking—how often do good journalists break these rules? Our end product will be a simple web interface that can take in a text and produce and output that both highlights where an article breaks each of the five rules and will provide a score for each article.
 
 
 
 
 ### Testing the Results
 
-To test the results, we will mark up our own master test set and see how our model performs against it. We will have one document for rules one, two, four, and five (our operational definition for rule three does not require human comparison.)
+To test the results, all four members of the group will go through and mark up a text and highlight where it breaks rules one, two, four, and five (our operational definition for rule three does not require human comparison.) Someone else in the group will also review each person's work to assure that the results are similar.
+
 
 
 ## Grading
