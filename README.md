@@ -188,9 +188,8 @@ Orwell's sixth rule is a meta one. It basically says to break any of these rules
 
 To test the results, all four members of the group will go through and mark up one large or two small texts and highlight where they break rules one, two, four, and five (our operational definition for rule three does not require human comparison.) The texts will from fiction, science, traditional news, and Orwell himself. Someone else in the group will also review each person's work to assure that the results are similar. Below is an example of how we will mark up the texts:
 
-```
-Jerry McBerry did not have any children of his own. His house was the <rule2>antithesis</rule2> of child-friendly. His house was as messy as Tom Sawyer's hair and his kitchen was no longer <rule1>as a pretty as a peacock.</rule1> But he did not mind. This was the way his house got when he worked long hours. And Jerry loved to work long hours. He had being running the <rule5>epidermal</rule5> health clinic for two years at this point and <rule1>it was his baby.<rule1> <rule4>He was totally consumed by the long hours because he knew nothing else.<rule4>
-```
+
+> Jerry McBerry did not have any children of his own. His house was the <rule2>antithesis</rule2> of child-friendly. His house was as messy as Tom Sawyer's hair and his kitchen was no longer <rule1>as a pretty as a peacock.</rule1> But he did not mind. This was the way his house got when he worked long hours. And Jerry loved to work long hours. He had being running the <rule5>epidermal</rule5> health clinic for two years at this point and <rule1>it was his baby.<rule1> <rule4>He was totally consumed by the long hours because he knew nothing else.<rule4>
 
 
 
