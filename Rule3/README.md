@@ -1,1 +1,0 @@
-This list of unnecessary words comes from the Purdue Online Writing Lab articles on [eliminating words](https://owl.english.purdue.edu/owl/resource/572/02/) and [avoiding common pitfalls.](https://owl.english.purdue.edu/owl/resource/572/04/)
