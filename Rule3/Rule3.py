@@ -21,7 +21,7 @@ def load_unnecesary_regexes():
     except:
         pp.pprint('Bad filename ' + filename)
         return None
-    print('Rule 3 loading unnecessary words...')
+    print('Loading unnecessary words...')
     words = f.read().split(',')
     return words
 

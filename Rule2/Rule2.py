@@ -41,18 +41,23 @@ def google_most_common_words(n_most_common=10000):
 # In[3]:
 
 # Global variables
-print('Rule 2 loading syllable dictionary...')
-syllable_dict = cmudict.dict()
-print( 'Rule 2 loading Google most common words...')
-most_common_words = google_most_common_words()
-
-
-# In[4]:
-
 # This number comes from Google's blog
 # https://research.googleblog.com/2006/08/all-our-n-gram-are-belong-to-you.html
 # TODO: If there's time, confirm this number
 NGRAM_TOKEN_COUNT = 1024908267229
+USE_COMMON_WORDS = False
+
+print('Loading syllable dictionary...')
+syllable_dict = cmudict.dict()
+if USE_COMMON_WORDS is True:
+    print('Loading Google most common words...')
+    most_common_words = google_most_common_words()
+else:
+    most_common_words = []
+
+
+# In[4]:
+
 
 # Shout out to Quora for this snippet of code
 # https://www.quora.com/Is-there-any-Google-Ngram-API-for-Python
@@ -217,7 +222,7 @@ def load_doc(filepath):
 
 # In[20]:
 
-def rule2_ranges_in_text(text, nlp=spacy.load('en')):
+def rule2_ranges_in_text(text, nlp):
     document = nlp(text)
     checked_sentences = [replaceable_word_in_tokenized_sentence(sentence) for sentence in document.sents]
     checked_words = [word for sentence in checked_sentences for word in sentence]
@@ -229,30 +234,3 @@ def rule2_ranges_in_text(text, nlp=spacy.load('en')):
             ranges.append((character_count, len(word)))
         character_count += len(word.text_with_ws)
     return ranges
-
-
-# In[24]:
-
-def marked_up_doc(document_str):
-    replaceable_ranges = rule2_ranges_in_text(document_str)
-    open_tag_indices = [(index, '<rule2>') for (index, length) in replaceable_ranges]
-    close_tag_indices = [(index + length, '</rule2>') for (index, length) in replaceable_ranges]
-    tag_dictionary = collections.defaultdict(list)
-    for (index, tag) in  open_tag_indices + close_tag_indices:
-        tag_dictionary[index].append(tag)
-
-    new_document = ''
-    character_count = 0
-    for i in range(len(document_str)):
-        index_tags = tag_dictionary[i]
-        if len(index_tags) == 0:
-            new_document += document_str[i]
-            continue
-        for tag in index_tags:
-            new_document += tag
-        new_document += document_str[i]
-    return new_document
-
-def is_closed_tag(tag):
-    return tag[1] == '/'
-

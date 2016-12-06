@@ -8,7 +8,7 @@
 # In[18]:
 from spacy.en import English
 
-parser = English()
+# parser = English()
 # In[17]:
 def rule4_ranges_in_text(article, parser):
     '''This function accepts a string of sentences and prints them out classifying them into active or passive.    It returns a list of tuples in the format (starting_char_of_passive_sentence, length_of_passive_sentence)    of sentences that are passive.''' 
@@ -42,5 +42,3 @@ def remove_quotes_from_text(text):
     quote_regex = r'"(.*?)"|“(.*?)”'
     text = re.sub(quote_regex, '', text)
     return text
-
-
