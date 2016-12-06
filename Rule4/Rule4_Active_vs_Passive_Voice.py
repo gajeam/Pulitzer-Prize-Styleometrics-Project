@@ -12,13 +12,9 @@ from spacy.en import English
 # In[17]:
 def rule4_ranges_in_text(article, parser):
     '''This function accepts a string of sentences and prints them out classifying them into active or passive.    It returns a list of tuples in the format (starting_char_of_passive_sentence, length_of_passive_sentence)    of sentences that are passive.''' 
-
     edited_article = remove_quotes_from_text(article)
-    
     parse = parser(edited_article)
-    
     passive_list = []
-    
 
     for sentence in parse.sents:
         sent = str(sentence)
@@ -30,7 +26,6 @@ def rule4_ranges_in_text(article, parser):
                 hasPassive = True
         if hasPassive:
             passive_list.append((article.find(sent), len(sent)))
-            print("Passive Voice Sentence: {0}.\nPassive Voice indicators: {1}".format(sentence, passive_indicators))
         else:
             continue
             
