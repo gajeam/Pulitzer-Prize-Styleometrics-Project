@@ -1,0 +1,18 @@
+h1 {
+	text-align: center;
+}
+
+.rule2 { 
+    background-color: rgba(255, 0, 0, 0.5);
+}
+
+.rule3 { 
+    background-color: rgba(0, 255, 0, 0.5);
+}
+
+.rule4 {
+    background-color: rgba(0, 0, 255, 0.5);
+}
+
+
+
