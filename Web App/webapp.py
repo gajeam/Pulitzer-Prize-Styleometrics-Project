@@ -20,12 +20,9 @@ def append_text_marked_with_rules(text, rules):
 	return soup.prettify()
 
 
+
+
 @app.route("/")
-def hello():
-    return "Hello, world!"
-
-
-@app.route("/marktext")
 def tag_text():
 	print(request.args)
 	input_text = request.args.get('text', '')
