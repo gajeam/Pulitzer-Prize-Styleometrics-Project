@@ -1,0 +1,846 @@
+Abacus
+Acquisition Indigestion
+Active Box
+Affluenza
+Air Pocket Stock
+Alimony Substitution Trust
+Alternative Investment
+Anatolian Tigers
+Angelina Jolie Stock Index
+Ankle Biter
+Anti-Fragility
+Asian Century
+Aspirin Count Theory
+Asset Valuation Reserve
+At A Premium
+A Ton Of Money
+Aunt Millie
+Away From The Market
+Baby Bells
+Baby Bills
+Baby Boomer
+Back Up
+Back Up The Truck
+Badwill
+Bagel Land
+Bag Holder
+Bag Man
+Baltic Tiger
+Baptism by Fire
+Barometer
+Bear Market Rally
+Bear Squeeze
+Bear Tack
+Bellwether Stock
+Best Of Breed
+Bid Whacker
+Big Blue
+Big Box Retailer
+Biodiesel
+Blackberry Addiction
+Black Friday
+Black Knight
+Black Swan
+Blind Pool
+Bo Derek
+Body Of Knowledge
+Boil The Ocean
+Boomerang
+Boomlet
+Boon
+Boston Snow Indicator
+Bottom Fisher
+BRICS
+Break
+Break Issue
+Buck
+Buck The Trend
+Bulldog Market
+Business Process Redesign
+Bust
+Buy And Homework
+Buzzword Bingo
+Capitulation
+Carbon Trade
+Cardboard Box Index
+Cash Cow
+Cash For Refrigerators
+Cash Is King
+Casino Finance
+Catalyst
+Category Killer
+Cats And Dogs
+Caveat Emptor
+Champagne Stock
+Chasing Nickels Around Dollar Bills
+Cherry Picking
+Chicken
+Chinese Wall
+Client Centric
+Clinton Bond
+Closing Price
+Club Deal
+CNN Effect
+Coaster
+Coattail Investing
+Cockroach Theory
+Coiled Market
+Cold Calling
+Collaborative Consumption
+Commercial Year
+Commoditize
+Control Stock
+Cool Beans
+Cooler
+Corner A Market
+Corporate Accountability
+Corporate Cannibalism
+Corporate Social Responsibility
+Acquisition
+Algorithmic trading
+In its simplest terms this is trading without the
+involvement of humans. To take an example,
+when an investor-driven trader (such as a pension
+fund) wants to buy stocks in large quantities,
+to avoid aff ecting the market price they will often
+use specially developed computer algorithms to
+spread the investments in such a way that market
+prices remain unaff ected as much as possible.
+It would be simply impossible for a human trader
+to respond as quickly to market information as
+a computer can.
+Alternative investment
+Traditional investments include stocks, bonds,
+cash or property. An alternative investment is
+basically anything else. The term includes art,
+wine and antiques, but most signifi cantly
+fi nancial assets such as private equity (stocks
+in a company not publicly traded on a stock
+exchange) and fi nancial derivatives (agreements
+that derive their return from the performance
+of an underlying asset like a stock or bond).
+Analyst
+A specialist in a specifi c area, sector or function
+of the bank. Also a job title often used to describe
+graduates new to banking.
+Arbitrage
+The practice of making a profi t from trading on
+two markets simultaneously. If the price of wheat
+in London is cheaper than in New York, you buy
+in London and simultaneously sell in New York.
+Sports arbitrage is the practice of placing bets
+on an event with a range of bookmakers,
+exploiting their diff erent prices to guarantee
+a profi t regardless of the outcome.
+Assets
+Predominantly used to describe anything owned
+by an individual or business which has monetary
+value. Within banking ‘asset’ is specifi cally used
+to describe a class of investment product, e.g.
+shares, property and bonds are all asset classes.
+Asset Management
+We have a whole section on this, but in brief, this
+is the professional management of investments.
+Fund managers/asset managers invest in the
+fi nancial markets on behalf of their clients to achieve
+attractive returns. The asset manager will discuss
+with the investor (or client) what kinds of investments
+they would like to make and set realistic goals for
+returns. Once the funds have been transferred from
+the investor to the asset manager, then that asset
+manager will place those funds where he/she thinks
+the return will be maximized over a given period.
+Audit
+The professional examination and verifi cation
+of a company’s accounting data.
+Automation
+Used to describe the processing of transactions
+using technology rather than manual procedures.
+This is a big issue in fi nancial services as cost and
+risk are greatly reduced by the use of computers.
+Back office
+The support functions of banks that are not directly
+involved in generating revenue, e.g. Technology,
+Operations and Human Resources. The back
+offi ce is also responsible for the processing of
+transactions made by traders and fund managers.
+Basel Committee
+A group of representatives from central banks
+around the world that mandate regulation to
+ensure stability of global fi nancial infrastructure;
+it is responsible for the Basel II regulatory
+framework. This sets down standards by which the
+Basel Committee can enforce how much capital
+banks must set aside to guard against fi nancial and
+operational risks.
+GLOSSARY OF TERMS 01
+Basis point
+Representing a hundredth of a percent, a basis
+point is used to measure rate changes in fi nancial
+instruments like interest rates and bond yields.
+Bear
+An individual who expects the value of a commodity,
+bond, share, currency, sector or market to fall.
+Bear market
+Any market in which prices exhibit a declining
+trend for a prolonged period. Because a bear
+attacks by clawing down, this term is associated
+with a falling market.
+Blue chip
+A well-established company with a good record
+of earnings over a long period of time; these
+companies are sought by investors seeking
+relative safety and stability.
+Book
+The summary of positions held by a dealer, desk
+or room. Position refers to an investor’s stake in
+a bond, share or market. A long position is the
+number of shares owned; a short position is the
+number of shares owed.
+Bond
+A long-term debt instrument with the promise to
+pay a specifi ed amount of interest and to return
+the original investment on a specifi ed maturity
+date; usually issued by governments and
+organizations in order to raise capital.
+Broker
+An individual or fi rm that charges a fee or
+commission for executing buy and sell orders
+submitted by another individual or fi rm.
+Or, the role of a broker fi rm when it acts as an
+agent for a customer and charges the customer
+a commission for its service.
+Bulge bracket
+In common parlance, a bulge bracket fi rm is an
+investment bank considered to be one of the
+largest and most profi table in the world. The name
+comes from the practice of listing these banks at
+the top of the ‘tombstone’. A tombstone is an
+advertisement formally announcing a particular
+transaction – perhaps an off ering or placement of
+stock of a company. The bank’s name at the top
+of the tombstone will typically be in a larger font
+and will therefore ‘bulge’ out.
+Bull
+An individual who expects the value of a commodity,
+bond, share, currency, sector or market to rise.
+Bull market
+A period during which share prices in a particular
+market (such as the stock market) are generally
+rising. Because a bull attacks by thrusting
+upward, this term is associated with a rising
+market.
+Business risk
+The risk that the cash fl ow of a business will
+be impaired because of adverse economic
+conditions, making it diffi cult for the company
+to meet its operating expenses.
+Buy side
+Institutional investors that hold their customer’s
+money and make buy and sell decisions on their
+behalf i.e. mutual funds, pension funds and trust
+companies.
+Call option
+The right but not the obligation to buy stock,
+shares or futures at a specifi ed price within a
+specifi ed time period; the investor pays a
+premium in order to get the option.
+Capital
+Money put into a business by its shareholders;
+can also be used as a general term to describe
+liquidity/cash.
+GLOSSARY OF TERMS 02
+Capital markets
+A general term encompassing all markets for
+fi nancial instruments.
+Capital raising
+Mechanisms by which companies raise money.
+Central Securities Depository (CSD)
+An agency that clears and settles bonds and
+shares transactions. There is only one of these in
+each country for each fi nancial product.
+Chartered Financial Analyst (CFA)
+A globally recognized qualifi cation taken by a
+range of professionals in the fi nancial services
+industry.
+Chinese wall
+The imaginary wall between diff erent areas in the
+bank that may have a confl ict of interest; it
+denotes a commitment not to disclose
+confi dential information to one another. In many
+cases, bankers will be physically prevented from
+interacting with colleagues in confl icting parts of
+the bank by not having access to their area in the
+building. Blocks might also be put in place on
+emails and phone calls between these areas. This
+is a general business term, not unique to banking.
+Clearing
+Confi rming the details of a transaction between
+traders as well as managing the transfer of
+payment and delivery of the relevant certifi cates
+and documentation.
+Clearing house
+A separate agency or corporation working with
+the commodity exchange (where commodities
+such as wheat, coff ee and oil are traded as well
+as contracts based on these products, such as
+futures and options) to match up buy and sell
+orders. This means transferring funds, ensuring
+delivery of ownership rights and guaranteeing all
+obligations on the part of buyers and sellers.
+Commission
+Fees paid to banks by clients for carrying out
+transactions and providing other services.
+Commodities
+Physical items such as oil, gold or grain that are
+traded on exchanges.
+Commodity exchange
+An exchange where commodities such as
+wheat, coff ee and oil are traded. A commodity
+exchange will also trade in contracts based on
+commodities, such as forwards, futures and
+options.
+Convertible bonds
+Bonds which may be converted, at the option of
+the holder, into shares of the issuing corporation
+during a specifi ed time period and according to
+specifi ed conditions.
+Coupon
+This denotes the amount of interest due on a debt
+product, such as a bond or a loan.
+Counterparty
+The opposite side of a fi nancial transaction,
+typically another fi nancial institution.
+Credit
+The supply of resources by one party to another
+for which repayment is delayed by agreement.
+Credit refers to an arrangement whereby a debt
+is agreed upon. In investment banking, a credit
+event is an occurrence relating to a debt
+obligation not being met. An obvious example is
+a company going bankrupt. Others include failure
+to pay, restructuring and moratorium (the law
+deciding that debt repayments can be delayed
+due to extenuating circumstances). Derivatives
+based on these credit events will payout to the
+investor if the company concerned exhibits one
+of these conditions.
+GLOSSARY OF TERMS 03
+Credit correlation
+The measure of how the default risk of one
+company moves in relation to that of another.
+Credit derivative
+An agreement between two parties, whose
+payoff depends on whether or not a credit event
+occurs (i.e. bankruptcy, default, upgrade or
+downgrade). Credit derivatives are used to off set
+risk.
+Credit risk
+The risk that the issuer of a bond or share may
+default on interest and/or principle payments, or
+become bankrupt. In general, the better the
+rating, the lower the bond’s coupon rate (rate of
+interest).
+Custodian
+A fi nancial institution, usually a bank or trust
+company that holds a mutual fund’s bonds,
+shares and cash in safekeeping.
+Custody
+The administering of bonds and shares by a
+fi nancial institution. The custodian keeps a record
+of a client’s investments and may also collect
+income, process tax reclaims and provide other
+services according to client instructions.
+Debt
+Money owed to creditors/lenders or buyers of
+debt securities (bonds, certifi cates, loans and
+leases).
+Delivery
+The transfer and receipt of ownership. More
+specifi cally, on a busy trading fl oor agreements
+are made that cannot be fully transacted there
+and then; delivery is the point at which the
+agreement is settled in full.
+Derivative
+An agreement that derives its value from an
+existing bond, share, currency or commodity
+(referred to as the base instrument or underlying
+investment). The price of a derivative will move in
+direct relationship to the price of the base
+instrument. Derivatives involve the trading of
+rights or obligations based on the underlying
+product, but do not directly transfer property.
+They are used to hedge risk or to exchange a
+fl oating rate of return (linked to a reference rate
+that is outside of the control of either party, such
+as LIBOR – the London Interbank Off ered Rate) for
+fi xed rate of return (an agreed rate that does not
+change).
+Electronic trading platform
+Electronic trading uses information technology to
+allow trading in securities to happen remotely in a
+virtual marketplace rather than a traditional
+trading fl oor. An electronic trading platform is the
+system which enables this to happen.
+Emerging markets
+The markets of developing countries: examples
+include Mexico, Malaysia, Chile, Thailand and the
+Philippines. Emerging market bonds and shares
+tend to be the most volatile in the world; they
+have tremendous growth potential but also pose
+signifi cant risks – political upheaval, corruption
+and currency collapse to name just a few.
+Equities
+Shares in a corporation representing a claim over
+a proportion of its assets and profi t.
+Equity
+The net worth of a company, it represents the
+ownership interest of the shareholders. For this
+reason, shares are often known as equities.
+GLOSSARY OF TERMS 04
+Equity Capital Markets (ECM)
+The markets on which primary equity issues are
+traded (also known as IPOs – Initial Public
+Off ering). These are new stocks entering the
+market for the fi rst time, either from a brand new
+company or a newly public company. ECM is also
+the name of a division of an investment bank
+which helps clients structure, buy and sell
+primary equity.
+Exchange
+A place for companies to publicly and centrally
+off er their investment options to investors. For
+example a commodity exchange will trade in
+physical items such as gold, wheat or oil. More
+than simply off ering these items to trade,
+investors will be able to purchase contracts based
+on these products – these will include things like
+futures, options and other more complex
+derivatives.
+Exchange-traded fund (ETF)
+An ETF is similar to a mutual fund, in that
+investors own a share of a pool of securities and
+other assets. The diff erence here is that shares in
+an ETF can be bought or sold throughout the day,
+much like normal stocks and shares.
+Exotic/Hybrid
+The most complex type of derivatives which are
+traded OTC (over the counter – that is to say they
+are not listed on an organized exchange). A
+derivative is an agreement that derives its payout
+from the performance of an underlying
+investment.
+Financial restructuring
+The reorganization of a company’s fi nances; often
+employed when the company is experiencing
+fi nancial diffi culty.
+Financial Services Authority (FSA)
+The UK regulatory body for the fi nancial services
+industry.
+Fixed income
+Debt instruments issued by corporations,
+governments or agencies characterized by a fi xed
+interest rate and stated maturity date. An
+example of a fi xed income investment is a bond,
+because a bond regularly pays a fi xed amount of
+money (interest) to its holder until maturity.
+Foreign exchange market
+A market where buyers and sellers trade the
+currencies of diff erent countries – also referred to
+as a forex or FX market.
+Front offi ce
+The area or function of a bank which is revenuegenerating;
+the front offi ce will include Sales &
+Trading, and Corporate Finance amongst others.
+Fund
+A pool of money to be invested or a fi scal and
+accounting entity with a self-balancing set of
+accounts.
+Fund manager
+The individual or team of individuals that
+manages a fund of stocks, bonds and other
+securities. The fund manager decides when to
+buy or sell the bonds and shares held in the fund.
+Futures contract
+A legally binding agreement to buy or sell a
+commodity or asset at a later date. They are
+standardized according to the quality, quantity,
+delivery time and location for each commodity,
+the only variable is price.
+G-20
+The group of twenty nations (in fact 19 nations
+plus the European Union) which meets semiannually
+to discuss and promote international
+fi nancial stability.
+GLOSSARY OF TERMS 05
+Generally Accepted Accounting
+Principles (GAAP)
+The methodology for preparing company
+accounts – it varies from country to country.
+Hedge
+Holding two opposing positions in two or more
+fi nancial instruments (bonds, shares,
+commodities) in order to off set a loss in one by a
+gain in the other. A 16th century term, it refers to
+the practice of hedging land, i.e. securing
+boundaries and limiting size. In the markets, to
+hedge your bets is to adopt a more secure
+position by limiting your exposure to risk.
+Hedge funds
+A fund, usually used by wealthy individuals and
+institutions, which is allowed to use aggressive
+strategies (including leverage, swaps, arbitrage,
+and derivatives). They are not constrained by the
+same laws as mutual funds. Hedge funds look to
+generate returns to investors even when markets
+are volatile or performing poorly. However,
+because of the nature of these strategies, a high
+level of risk is involved.
+High net worth individual
+A person who is worth a lot of money.
+Index
+A price index lists an average price for a given
+class of goods or services in a specifi c place and
+time. The well-known indices such as Dow Jones
+and FTSE 100 list share prices for the largest
+companies within a particular country. So the
+Dow Jones index lists the share prices of the 30
+largest US companies. The FTSE 100 is the share
+price list for the top 100 companies in the UK. The
+Nikkei 225 lists the share prices of the top 225
+companies in Japan.
+Initial public off ering (IPO)
+This is the initial, or fi rst, off ering of shares or
+common stock (a form of corporate equity
+ownership) to the public. Often referred to as
+‘fl otation’ or ‘off ering’.
+Institutional investor
+An organization that has sums of money available
+to invest e.g. a pension fund.
+Instrument
+An item which may be traded, e.g. stocks, bonds,
+futures, options, and currencies.
+Interest rate
+The cost of borrowing money expressed as a
+percentage, usually over a period of one year. The
+rate may be either fi xed (unchanging) or variable
+(based upon an index or market condition).
+Investment products
+Diff erent types of investments, e.g. stocks,
+bonds, futures, options and currencies.
+Junk bond
+Bonds that have little or no collateral value (what
+they might be worth as security for a loan) or
+liquidation value (what they could quickly be sold
+for) and are typically very risky. For this risk they
+off er a high rate of return. Also known as high
+yield bonds.
+Ledger
+A set of accounts in which fi nancial transactions
+are recorded.
+Leverage
+The degree to which a company or individual is
+using borrowed money. A highly leveraged
+company may be at risk of bankruptcy if it cannot
+meet its fi nancing commitments.
+Leveraged buyout
+Occurs when the controlling stake in a company’s
+equity is obtained with a high proportion of the
+funds being acquired via debt or leverage. This
+leverage is usually secured on the assets of the
+company being bought out.
+GLOSSARY OF TERMS 06
+Leveraged fi nance
+Finance which takes advantage of the ratio
+between a company’s debt and equity, often
+associated with relatively high risk and return.
+Usually it takes the form of loans or high-yield
+bonds, like junk bonds. It is also the name of the
+group in an investment bank which provides
+advice on these opportunities.
+Liquidity
+The ease with which a fi nancial asset can be
+exchanged for cash without the holder incurring
+fi nancial loss. A currency like sterling is liquid
+whereas a life-insurance policy is not.
+Liquidity risk
+The risk stemming from an investment that
+cannot be bought or sold quickly enough to
+prevent or minimize a loss.
+Long position
+The purchase of a security with the expectation
+that it will rise in value. “[He/She] has a long
+position in [Company X]”.
+Mandate
+When the client company agrees to use the bank
+for a specifi c service or transaction.
+Market capitalization
+The value of a company’s stock which gives a
+picture of the company’s size. It is calculated by
+multiplying the price of shares by the number of
+shares outstanding (in the hands of the public).
+Market maker
+A fi rm or individual who sets buy and sell prices
+in a fi nancial instrument or commodity.
+Market risk
+The chance that a bond or share’s value will
+decline. With debt securities, (loans and bonds)
+market risk is closely tied to interest rate risk – as
+interest rates rise, prices decline and vice versa.
+Maturity
+When an investment based on a fi xed term, such
+as a bond, closes and repayment of the principal
+amount (original investment) is made.
+Mergers & Acquisitions (M&A)
+Negotiating the buying and selling of companies
+or parts of companies. This also describes an area
+in a bank that, among other things, advises
+companies on mergers and takeovers.
+Middle offi ce
+This is the area or function of the bank that does
+not generate profi t, but supports the front offi ce
+in fi nancial and legal matters. For example,
+Treasury is part of the middle offi ce, alongside
+Legal and Risk Management.
+Mutual fund
+The larger the quantity of money, the better able
+a fund manager is to generate big returns. For
+this reason investors will often pool their
+resources in a collective fund, or a mutual fund,
+to maximize their potential. These funds are
+professionally managed and often have a board
+of directors or trustees to monitor the progress of
+the fund and to ensure it is being run to the
+greatest benefi t for investors.
+Nearshoring
+Off shoring is the practice of moving a business
+service to a provider in another country. However,
+there are instances in which greater distance or
+time-lag is not desirable for the eff ective running
+of the service. In this case, nearshoring might be
+a better solution. This is when the service is
+outsourced to a business in a neighboring
+country – making contact easier and more
+effi cient while also reducing overall running
+costs.
+Operational risk
+The risk of loss associated with inadequate or
+failed internal processes, staff , systems, external
+events or legal matters.
+GLOSSARY OF TERMS 07
+Options
+Like a futures contract, however the purchaser
+pays a premium to have the choice (rather than
+the obligation) to complete the contract; the
+contract can be the right to buy (a call option) or
+to sell (a put option) a set number of shares at a
+fi xed price.
+Organization of Petroleum Exporting
+Countries (OPEC)
+An organization that meets regularly, its stated
+aims including the stabilization of prices in
+international oil markets.
+Outsourcing/Off shoring
+When a business moves a service function of its
+business to an external provider in order to
+reduce costs. Off shoring is when that service is
+provided by an organization based abroad.
+Over the counter (OTC)
+The buying and selling of bonds and shares that
+are not listed on an organized exchange; trading
+is handled by dealers through negotiation.
+Plain/Vanilla
+The most basic, standardized trading instruments
+(agreements that derive their payout from the
+performance of an underlying investment). The
+term applied originally to exchange traded items,
+now commonly applied to any standard banking
+product.
+Portfolio
+A collection of investments (can be shares,
+bonds, convertibles, cash, property, art, etc.)
+belonging to an individual or institutional investor.
+The purpose of a portfolio is to reduce risk by
+diversifying investments (i.e. holding diff erent
+types of investments and spreading out the risk).
+Position
+A trading view expressed by buying or selling.
+If the position is open it is exposed to market risk,
+if a position is closed the profi t/loss has been
+realized.
+Private clients
+People with signifi cant personal assets (cash,
+company stock, art, shares) requiring professional
+investment management; often referred to as
+high net worth individuals.
+Private equity
+Equity securities in companies that are not traded
+on a stock exchange. Venture capitalists are
+private equity investors, but investor groups are
+typically made up of institutions, pension funds,
+high net worth individuals and other
+organizations who invest in a private equity fund.
+This fund is then managed and monitored
+professionally to invest in the private equity
+market. The portfolio of a private equity fund will
+typically include traditional assets such as bonds,
+but also hedge funds, real estate and
+commodities.
+Profi t & Loss statement (P&L)
+This is a document that details the revenue
+generated by a business and the various costs it
+has incurred to give an indication of its
+performance over a specifi c time period.
+Project fi nance
+A form of loan extension in which the interest
+payments and repayments in respect of the funds
+are made largely or exclusively from the earnings
+of the investment project concerned.
+Proprietary trading
+When a bank trades in the fi nancial markets with
+its own capital in order to try to make money for
+the business.
+GLOSSARY OF TERMS 08
+Put option
+The right to sell shares at an agreed price on a
+future date.
+Rating services
+Companies that specialize in giving credit ratings
+will assess a business for its ability to honor its
+debts. So if that business wants to borrow a
+million dollars, the lender needs to know that it
+can pay that money back. It will take many things
+into account including the credit history of the
+business and its current investments. Although a
+credit rating is only an opinion on the creditworthiness
+of a business, ratings services
+providers build sophisticated systems and create
+bigger and better business for themselves by
+giving accurate, reliable credit assessments.
+Retail investor
+An investor who is an individual, not a company.
+Rights issue
+The issue of new equity (shares) in order to raise
+capital for the company.
+Risk Management
+The measurement of the possibility of losing or
+not gaining value, and structuring risks at an
+optimal risk/reward ratio. In other words,
+calculating the probability and eff ect of
+something bad happening and planning a course
+of action to minimize potential damage. Risk
+Management is also the term given to an area of
+the bank.
+Securities
+Collective noun for bonds and shares.
+Securitization
+A fi nancial technique that pools assets together
+and, in eff ect, turns them into a tradable security.
+Sell side
+Used to describe brokers who sell bonds and
+shares to customers and the research
+departments of institutions that make
+recommendations to their clientele. See also ‘buy
+side’.
+Settlement
+The trial stage of a transaction after clearing; it
+involves making payment and transferring
+ownership/documentation.
+Shares
+A certifi cate issued by a company (for general
+purchase) entitling the holder to ownership rights
+including a share of the dividends (payments
+made by a company to its shareholders).
+Short position
+The practice of making money on a security
+whose value is expected to fall. A short seller
+identifi es a security, let’s say a share in a
+company, which he or she thinks is about to fall
+in price. He/she borrows the share from a broker
+and sells it at the current price. If, as expected,
+the price of that share falls, he/she then buys the
+share back at the lower price and gives the share
+back to the broker. He/she will be subject to a
+borrowing fee charged by the broker, but if the
+share fell by a signifi cant amount, the short seller
+has made money. All of this means the security
+being traded must be fungible: that is to say, the
+security’s value can be substituted by another
+security of the same type. Currency, for example,
+is fungible; if you borrow $10 from someone, you
+can give them back any $10 note – it doesn’t
+have to be the same one they gave you.
+Spot market
+A public fi nancial market in which trades are
+completed for immediate delivery, as opposed to
+futures markets in which delivery is due at a
+specifi ed later time. Most spot markets exist on
+the internet. An example is the spot energy
+market in which surplus energy is to be sold and
+delivered immediately.
+GLOSSARY OF TERMS 09
+Spread
+The diff erence between the price at which a
+fi nancial institution will buy a bond or share and
+the price at which it will sell.
+Stockbroker
+Those who advise people who want to buy/sell
+bonds and shares.
+Stock
+Another word for shares and equities.
+Stress test
+A test used by risk managers to see what the
+impact would be on particular stocks, companies
+or markets in hypothetical scenarios.
+Structured products
+A tailor-made investment package combining
+bonds with other types of assets, created using
+complex mathematical modeling techniques.
+Swap
+The exchange of one asset or liability for a similar
+asset or liability for the purpose of lengthening or
+shortening maturities (the time frame for the
+return of the original investment), or raising or
+lowering coupon rates (interest rates) to maximize
+revenue or minimize fi nancing costs.
+Tombstone
+An advertisement placed in a newspaper or
+magazine detailing a new off ering of stock and
+listing the syndicate members. It also refers to
+plastic or glass ornaments celebrating a
+completed transaction which bankers collect on
+their desks.
+Trader
+A person who buys and sells instruments in the
+fi nancial markets.
+Trading book
+Details of an institution’s total positions in the
+market. This is a resource used by the institution
+to track its trading activities. It includes currently
+held securities and the history of trades made.
+Trading fl oor
+The area where traders sit within an investment
+bank.
+Underwriting
+A guarantee (which is off ered by a bank in return
+for a fee) to buy or to fi nd the buyers for an entire
+issue of stocks and shares.
+Value at Risk (VaR)
+A measure of the potential changes in the
+portfolio value over a specifi ed period of time. The
+VaR is calculated within a specifi c confi dence
+interval, say 99% – that is to say “we are 99%
+confi dent that the portfolio returns over the next
+year will be within -6% and +7%”.
+Venture capitalist
+These are investors in brand new companies,
+usually with some unique selling point or
+technological innovation that means the
+investment has the potential to yield high returns.
+But the risk is also great, so investors typically
+receive large stakes in the company they are
+investing in, or a high degree of control ove
+
+
+## Source: http://www.unofficialguidetobanking.com/assets/Jargon_Buster.pdf
+## Source: http://www.investopedia.com/categories/buzzwords.asp

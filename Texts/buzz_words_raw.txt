@@ -1,0 +1,271 @@
+Action this
+Action that
+Alignment[1]
+At the end of the day[1]
+Break through the clutter[2]
+Bring to the table[3]
+Buzzword[2]
+Clear goal[4]
+Disruptive innovation[5]
+Diversity[6]
+Empowerment[7][8]
+Exit strategy[7]
+Face time[7]
+Generation X[1]
+Globalization[9]
+Going forward
+grow the business
+Headlights - to gain visibility into
+Holistic approach
+Impact[11] – instead of effect as a noun
+Leverage[2] – used as verb to mean magnify, multiply, augment, or increase.
+Millennial[1]
+Moving forward[12]
+New normal[13]
+On the runway[1]
+Organic growth[2]
+Outside the box[1][11]
+Paradigm[14]
+Paradigm shift[2][15]
+Proactive[11][14]
+Push the envelope
+Reach out[16][17] – as in "I'll reach out to sales to get the latest figures".
+Sea change[2]
+Sisterhood[18]
+Spin-up[19]
+Strategic Communication (also known as "Stratcom")
+Streamline[2]
+Survival strategy[1]
+Sustainability
+Synergy[2][8][11][14]
+Unpack that sentence
+Wellness[21]
+in my Wheelhouse
+Win-win[1]
+Accountable talk[23]
+Higher-order thinking[24]
+Invested in[25]
+Run like a business[26]
+Student engagement[27][28][29]
+Common Core
+Bloom's Taxonomy
+Differentiated instruction
+Digital Literacy
+Flipped Classroom
+Guided Reading
+Instructional Scaffolding
+Multiple Intelligences
+Project-Based Learning
+Adaptive Learning
+Brain Break
+Cooperative Learning
+Analytics[30]
+Ballpark figure[7]
+Bandwidth[1]
+B2B
+B2C
+Best of Breed
+Best practices[7]
+Bizmeth[31] – portmanteau of "business method".
+Brand[31]
+Brick-and-mortar
+Business process outsourcing
+Buzzword compliant[34]
+Building capabilities/Capability building[35]
+Cherry-Pick
+Circle Back
+Client-centric[7]
+Cloud computing[36]
+Close the loop[37]
+Co-opetition[38]
+Come-to-Jesus moment[39]
+Content marketing
+Core competency[40]
+Creative [41]
+Customer-centric[7](also customer-centric mindset)
+Deep dive
+Dove tail
+Downsizing[7]
+Drill down [42]
+Drinking the Kool-Aid[7] –trusting in things offered by authority figures
+Early-stage[43]
+Employer branding
+Eating your own dogfood[7][31] –use a product yourself which you sell to others.
+Enable[44]
+Entitlement
+Enterprise[31]
+Event horizon[45]
+Eyeballs[15]
+-free, as in cholesterol-free seaweed or gluten-free eggs, lacking some putatively harmful substance that it never contained in the first place.
+Free value[2]
+Fulfilment issues[31]
+Generation Y
+Granular[31]
+Herding cats[7]
+Holistic (approach/integration)[46]
+Home real estate usage for an unoccupied dwelling unit
+Hyperlocal[47]
+Innovation[48]
+Innovative[41]
+Knowledge Process Outsourcing[32] – also known as KPO.
+Leverage[49]
+Logistics[50] – Now commonly used for shipping, and shipping companies
+Long Tail[51]
+Low Hanging Fruit[2][52]
+Make it pop[2]
+Mindshare[15]
+Mission Critical[15]
+Management Visibility[15]
+New economy[15]
+Next generation[31]
+Offshoring[45] – also known as Offshore outsourcing, or something being offshorable.
+Pain point[17][53]
+Paralysis by Analysis[54]
+Part of our DNA
+Passionate[55]
+Peel back the onion
+Online tonight brains?
+Pick and Shovel Work
+Profit center
+Quick-win
+Return on Investment[2] – also known as ROI.
+Reverse fulfilment[31] – Processing returned products.
+Rightshoring[56]
+Seamless (integration)[57]
+Serum
+Share options[31]
+Short Runway
+Silo (for "compartmentalize")
+Social Currency
+Socialize
+Solution[1]
+SOX[58] – abbreviation of Sarbanes-Oxley.
+Sustainability[59]
+Storytelling
+Startup
+Strategy
+Synergy
+Take Offline[60]
+Talent Relationship Management
+Tee off (begin something, i.e. a meeting or program)
+Touch Base
+Touchpoint[61]
+Upselling
+Upcycling
+Value-added[1]
+Visibility[45]
+Water under the bridge [62]
+We are who we are
+4G[58]
+Aggregator[63]
+Agile[64]
+Ajax[8][58]
+Algorithm[65]
+Benchmarking[66]
+Back-end[31]
+Beta[8]
+Big data - larger data sets than last month
+Bleeding edge[31]
+Blog[63] – plus various other words that incorporate "blog"
+Bring your own Device - use of personal equipment (usually mobile) in a work environment
+Bricks-and-clicks[31][31]
+Clickthrough[31]
+Cloud[67]
+CloudOps
+Collaboration[68]
+Content management[68]
+Content Management System[63] – also known as CMS.
+Convergence[69]
+Cross-platform[31]
+Cyber-physical Systems (CSP)
+Datafication[70]
+Data mining[71] - any kind of data collection or analysis, even simple statistics such as taking averages on large data sets
+Data science[72]
+Deep dive[17]
+Deep web[73] - used interchageably with "Dark web" even though they're not the same
+Design pattern[74]
+DevOps[75]
+Digital divide[63]
+Digital Remastering[76]
+Digital Rights Management[8] – also known as DRM.
+Digital signage[77]
+Disruptive Technologies[78]
+Document management[68]
+Dot-bomb
+Data-Driven Development
+Customer-Driven Development
+Design-Driven Development
+Product-Driven Development
+Market-Driven Development
+Test-Driven Development
+Profit-Driven Development
+E-learning[80]
+End-to-End
+Engine[81]
+Enterprise Content Management[63] – also known as ECM.
+Enterprise Service Bus[82] – also known as ESB.
+Framework[8]
+Folksonomy[63]
+Fuzzy logic[83]
+Growth Hacking
+HTML5[84]
+Immersion[85]
+Information superhighway
+Information highway[8]
+Internet of Things[86]
+Innovation[87]
+Machine Learning
+Mashup[8]
+Microservices
+Mobile[88]
+Modularity[89][90]
+Nanotechnology[91]
+Netiquette[63]
+Network Function virtualization
+Next Generation
+NextGen
+Object-Oriented Programming
+Omnichannel
+Pandering
+Parsing
+PaaS
+Podcasting[58][63]
+Portal[31]
+Real-time[63]
+Responsive Web Design[92]
+Sensorization[93]
+SaaS[58]
+Scalability[94][95]
+Skeuomorphic
+Social bookmarking[58]
+Social software[63]
+Software Defined
+Software defined Networking
+Spam[63]
+Sync-up[15]
+Development Life-Cycle
+Tagging[63]
+Think outside the box[63]
+Thought Leader
+Transmedia[96]
+Unified Communications
+User generated content[97]
+Viral
+Virtualization[58]
+Vlogging[63]
+Vortal[98]
+Web 2.0[8][58][63]
+Webinar[31][63]
+Weblog[63]
+Web services[68]
+Wikiality[99]
+Workflow[68][100][101]
+Information society[103]
+Political capital[104]
+Statist[105]
+Stakeholder[106]
+Antifragile[107]
+Best-in-class[108]
+
+
+## Source: https://en.wikipedia.org/wiki/List_of_buzzwords
