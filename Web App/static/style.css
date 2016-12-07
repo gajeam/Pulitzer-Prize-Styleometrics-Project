@@ -2,34 +2,6 @@ h1 {
 	text-align: center;
 }
 
-.rule1s {
-    background-color: rgba(255, 255, 0, 0.5);
-}
-
-.rule1s_not_trite {
-    background-color: rgba(255, 0, 255, 0.5);
-}
-
-.rule1m {
-    background-color: rgba(127, 127, 127, 0.5);
-
-}
-.rule2 { 
-    background-color: rgba(255, 0, 0, 0.5);
-}
-
-.rule3 { 
-    background-color: rgba(0, 255, 0, 0.5);
-}
-
-.rule4 {
-    background-color: rgba(0, 0, 255, 0.5);
-}
-
-.rule5 {
-    background-color: rgba(0, 255, 255, 0.5);
-}
-
 /*
  * Globals
  */
@@ -151,55 +123,52 @@ h6, .h6 {
 }
 
 .btn-long {
-  background-color: #337ab7;
+  background-color: rgb(51, 122, 183);
   border-color: #2e6da4;
 }
 
 .btn-passive{
-  background-color: #5cb85c;
+  background-color: rgb(92, 184, 92);
   border-color: #4cae4c;
 }
 
 .btn-similie{
-  background-color: #5bc0de;
+  background-color: rgb(91, 192, 222);
   border-color: #46b8da;
 }
 
 .btn-jargon{
-  background-color: #f0ad4e;
+  background-color: rgb(240, 173, 78);
   border-color: #eea236;
 }
 
 .btn-metaphor{
+  background-color: rgb(201, 48, 44);
+  border-color: #c9302c 
 }
 
 .btn-cutword{
-  background-color: #f0ad4e;
-  border-color: #eea236;
-}
-
-.btn-cutword{
-  color: #fff;
   background-color: #f3827f;
-  border-color: #f19491;
+  border-color: rgb(241, 148, 145);
 }
+
 .btn-cutword:focus,
 .btn-cutword.focus {
   color: #fff;
-  background-color: #f19491;
-  border-color: #f19491;
+  background-color: rgb(241, 148, 145);
+  border-color: rgb(241, 148, 145);
 }
 .btn-cutword:hover {
   color: #fff;
-  background-color: #f19491;
-  border-color: #f19491;
+  background-color: rgb(241, 148, 145);
+  border-color: rgb(241, 148, 145);
 }
 .btn-cutword:active,
 .btn-cutword.active,
 .open > .dropdown-toggle.btn-cutword {
   color: #fff;
-  background-color: #f19491;
-  border-color: #f19491;
+  background-color: rgb(241, 148, 145);
+  border-color: rgb(241, 148, 145);
 }
 .btn-cutword:active:hover,
 .btn-cutword.active:hover,
@@ -211,8 +180,8 @@ h6, .h6 {
 .btn-cutword.active.focus,
 .open > .dropdown-toggle.btn-cutword.focus {
   color: #fff;
-  background-color: #f19491;
-  border-color: #f19491;
+  background-color: rgb(241, 148, 145);
+  border-color: rgb(241, 148, 145);
 }
 .btn-cutword:active,
 .btn-cutword.active,
@@ -280,4 +249,33 @@ h6, .h6 {
 }
 .blog-footer p:last-child {
   margin-bottom: 0;
+}
+
+
+.rule1s {
+  background-color: rgba(91, 192, 222, 1.0);
+}
+
+.rule1s_not_trite {
+  background-color: rgba(91, 192, 222, 0.2);
+}
+
+.rule1m {
+  background-color: rgba(201, 48, 44, 0.8);
+
+}
+.rule2 { 
+  background-color: rgb(51, 122, 183, 0.8);
+}
+
+.rule3 { 
+  background-color: rgba(241, 148, 145, 0.8);
+}
+
+.rule4 {
+  background-color: rgba(92, 184, 92, 0.8);
+}
+
+.rule5 {
+  background-color: rgba(240, 173, 78, 0.8);
 }
