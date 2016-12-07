@@ -3,3 +3,16 @@
 Rule2/__pycache__
 Rule3/__pycache__
 Rule4_Active_vs_Passive_Voice.cpython-35.pyc
+Web App/__pycache__/rule1.cpython-35.pyc
+Web App/__pycache__/rule2.cpython-35.pyc
+Web App/__pycache__/rule3.cpython-35.pyc
+Web App/__pycache__/rule4.cpython-35.pyc
+orwell.cpython-35.pyc
+Web App/__pycache__/rule5.cpython-35.pyc
+Web App/__pycache__/rule5_classify.cpython-35.pyc
+Web App/static/linear_jargon_classifier.pkl
+Web App/static/linear_jargon_classifier.pkl_01.npy
+Web App/static/linear_jargon_classifier.pkl_02.npy
+Web App/static/linear_jargon_classifier.pkl_03.npy
+Web App/static/linear_jargon_classifier.pkl_04.npy
+Web App/static/linear_jargon_classifier.pkl_05.npy

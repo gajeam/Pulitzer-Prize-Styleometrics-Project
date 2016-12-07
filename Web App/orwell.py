@@ -1,15 +1,20 @@
 import collections
 from spacy.en import English
 
+print('Loading Rule 5...')
+import rule5
+print('Loading Rule 1...')
+import rule1
 print('Loading Rule 2...')
 import rule2
 print('Loading Rule 3...')
 import rule3
 print('Loading Rule 4...')
 import rule4
+print('Finished loading rules ;)\n')
 
 ## Constants
-TAG_RULE1S_TRITE = 'rule1s_trite'
+TAG_RULE1S_TRITE = 'rule1s'
 TAG_RULE1S_NOT_TRITE = 'rule1s_not_trite'
 TAG_RULE1M = 'rule1m'
 TAG_RULE2 = 'rule2'
@@ -22,16 +27,23 @@ ALL_RULES = [TAG_RULE1S_TRITE, TAG_RULE1S_NOT_TRITE, TAG_RULE1M, TAG_RULE2, TAG_
 print('Loading spacy model...')
 nlp = English()
 
-def build_tag_ranges_for_text(text, rules=ALL_RULES):
+def build_tag_ranges_for_text(text, rules):
 	all_tags = []
 	for rule in rules:
 		print('Calculating tags for ' + rule)
+		if rule == TAG_RULE1S_TRITE:
+			all_tags.extend([(rule, tag_range) for tag_range in rule1.trite_similes(text)])
+		if rule == TAG_RULE1S_NOT_TRITE:
+			all_tags.extend([(rule, tag_range) for tag_range in rule1.nontrite_similes(text)])
 		if rule == TAG_RULE2:
 			all_tags.extend([(rule, tag_range) for tag_range in rule2.rule2_ranges_in_text(text, nlp)])
 		if rule == TAG_RULE3:
 			all_tags.extend([(rule, tag_range) for tag_range in rule3.rule3_ranges_in_text(text)])
 		if rule == TAG_RULE4:
 			all_tags.extend([(rule, tag_range) for tag_range in rule4.rule4_ranges_in_text(text, nlp)])
+		if rule == TAG_RULE5:
+			all_tags.extend([(rule, tag_range) for tag_range in rule5.rule5_ranges_in_text(text)])
+
 	return all_tags
 
 
@@ -61,9 +73,11 @@ def start_tag_with_rule(rule, debug=False):
 def end_tag():
 	return '</span>'
 
-def marked_html_from_text(text, rules):
+def marked_html_from_text(text, rules=ALL_RULES):
 	# rules = [TAG_RULE4]
 	marked_text = text_marked_up_with_tags(text, rules)
-	return '<p>' + marked_text + '</p>'
+	marked_text = '<p>' + marked_text + '</p>'
+	marked_text = marked_text.replace('\n', '</p><p>')
+	return marked_text
 
 # print(marked_html_from_text('He was eaten by a shark. And that is kind of interesting because sharks are tremendously cool.', [TAG_RULE4]))

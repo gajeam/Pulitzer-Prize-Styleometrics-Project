@@ -48,7 +48,7 @@ def google_most_common_words(n_most_common=20000):
 # https://research.googleblog.com/2006/08/all-our-n-gram-are-belong-to-you.html
 # TODO: If there's time, confirm this number
 NGRAM_TOKEN_COUNT = 1024908267229
-USE_COMMON_WORDS = False
+USE_COMMON_WORDS = True
 
 print('Loading syllable dictionary...')
 syllable_dict = cmudict.dict()
