@@ -148,6 +148,7 @@ def is_number(s):
     except ValueError:
         return False
 
+
 def adjust_classifier_biases(prediction_results, manual_list):
     for word_index in range(len(manual_list)):
         words =  manual_list[word_index][0].strip()
