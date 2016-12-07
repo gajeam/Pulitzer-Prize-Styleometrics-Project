@@ -5,7 +5,7 @@
 
 # In[17]:
 
-get_ipython().magic('matplotlib inline')
+# get_ipython().magic('matplotlib inline')
 import nltk
 from nltk.corpus import names
 import random
@@ -17,17 +17,35 @@ from nltk import trigrams
 
 # In[ ]:
 
-
+def remove_overlapping_tags(tag_list):
+    # print(tag_list)
+    index = 0
+    while index < len(tag_list) - 1:
+        potential_overlapping_index = index + 1
+        # print(index)
+        while potential_overlapping_index < len(tag_list):
+            # print("in",potential_overlapping_index)
+            if tag_list[index][0] + tag_list[index][1] > tag_list[potential_overlapping_index][0]:
+                tag_list[index] = (tag_list[index][0], tag_list[potential_overlapping_index][0] + tag_list[potential_overlapping_index][1])
+                # print("Remove: ", tag_list[potential_overlapping_index])
+                tag_list.remove(tag_list[potential_overlapping_index])
+            else:
+                potential_overlapping_index += 1
+                break
+        index += 1
+    # print(tag_list)
+    return tag_list
 
 
 # In[18]:
 
 def read_article_for_metaphor(article):
-    f = open(‘static/my_classifier.pickle', 'rb')
+    f = open('static/my_classifier.pickle', 'rb')
     cl = pickle.load(f)
     f.close()
-    
+
     testset = nltk.sent_tokenize(article)
+    # print(testset)
     filtered_words = []
     testmeta = []
     word_list = ''
@@ -56,7 +74,7 @@ def read_article_for_metaphor(article):
                 metaphor_list.append(testsample)
             elif cl.classify(metaphor_features(testsample)) == 'NOT metaphor':
                 nonmetaphor_count += 1
-                
+
     return metaphor_list
 
 #     print('metaphor_count:' + str(metaphor_count))
@@ -99,19 +117,19 @@ def metaphor_features(word):
 # In[20]:
 
 # with open("sciencearticle.txt", "r") as testset:
-def Rule1_metaphor(article):
+def rule1m_ranges_in_text(article):
     article = article.lower()
     word_list = ''
     highlight_bucket = []
     tag_list = []
     stopwords_regex, punctuation_regex = create_regex_strings()
-    
+
     metaphor_list = read_article_for_metaphor(article)
-    
+
     for trigram in metaphor_list:
 #         print(trigram)
         trigram_list = trigram.split(" ")
-        regex_string = "(" + trigram_list[0] + punctuation_regex + "(" + stopwords_regex + punctuation_regex + ")*" + trigram_list[1] + punctuation_regex + "(" + stopwords_regex + punctuation_regex + ")*" + trigram_list[2] + ")" 
+        regex_string = "(" + trigram_list[0] + punctuation_regex + "(" + stopwords_regex + punctuation_regex + ")*" + trigram_list[1] + punctuation_regex + "(" + stopwords_regex + punctuation_regex + ")*" + trigram_list[2] + ")"
 #         print(regex_string)
 #         print(article)
         match = re.search(regex_string, article)
@@ -120,36 +138,13 @@ def Rule1_metaphor(article):
 #             print(trigram, complete_trigram)
             index = article.find(complete_trigram)
 #             print(index, complete_trigram)
-            index_len = len(trigram)
+            index_len = len(complete_trigram)
             highlight_bucket.append(article[index:index+index_len])
             tag_list.append((index, index_len))
 #             article = article[index+index_len:]
         else:
-#              print("Not found: " + trigram)
+             print("Not found: " + trigram)
              continue
-    
-#     for line in testset:
-# #         print(line)
-#         for trigram in metaphor_list:
-#             trigram_list = trigram.split()
-#             index = line.find(trigram_list[0])
-#             index_len = len(trigram)
-#             highlight_bucket.append(line[index:index+index_len])
-#             line = line[index+index_len:]
-#         print(highlight_bucket)
-#         len(highlight_bucket)
-        
-    return tag_list
 
 
-# In[23]:
-
-# with open("sciencearticle.txt", "r") as testset:   
-# #     print(metaphor_list)
-#     print(Rule1_metaphor(testset.read()))
-
-
-# In[ ]:
-
-
-
+    return remove_overlapping_tags(tag_list)

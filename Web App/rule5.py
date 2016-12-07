@@ -64,6 +64,17 @@ def test_manual_predictions(manual_list, clf):
     manual_predictions = clf.predict(manual_test_dict)
     return manual_predictions
 
+def create_regex_strings():
+    stopwords_regex = "("
+    # print(stopwords.words('english'))
+    for word in stopwords.words('english'):
+        stopwords_regex = stopwords_regex + word + "|"
+    stopwords_regex = stopwords_regex[:-1] + "|an)"
+#     print(stopwords_regex)
+    punctuation_regex = r"[“”!\"#$%&'\(\)*+,-./:;<=>?@^_`{}~\s]*"
+    return stopwords_regex, punctuation_regex
+
+
 
 # In[89]:
 
@@ -109,34 +120,128 @@ class ItemSelector(BaseEstimator, TransformerMixin):
 
 # In[111]:
 
+
+
+def remove_overlapping_tags(tag_list):
+    print(tag_list)
+    index = 0
+    while index < len(tag_list) - 1:
+        potential_overlapping_index = index + 1
+        # print(index)
+        while potential_overlapping_index < len(tag_list):
+            # print("in",potential_overlapping_index)
+            if tag_list[index][0] + tag_list[index][1] > tag_list[potential_overlapping_index][0]:
+                tag_list[index] = (tag_list[index][0], tag_list[potential_overlapping_index][0] + tag_list[potential_overlapping_index][1])
+                # print("Remove: ", tag_list[potential_overlapping_index])
+                tag_list.remove(tag_list[potential_overlapping_index])
+            else:
+                potential_overlapping_index += 1
+                break
+        index += 1
+    print(tag_list)
+    return tag_list
+
+def is_number(s):
+    try:
+        float(s)
+        return True
+    except ValueError:
+        return False
+
+
+def adjust_classifier_biases(prediction_results, manual_list):
+    for word_index in range(len(manual_list)):
+        words =  manual_list[word_index][0].strip()
+        if prediction_results[word_index]:
+            print(words[:-2])
+            if words[-2:] in (" s", " t", "'t"):
+                prediction_results[word_index] = False
+            if is_number(words.strip()):
+                prediction_results[word_index] = False
+            if words.strip() in ("mr","mrs","usa"):
+                prediction_results[word_index] = False
+    return prediction_results
+
+
 def rule5_ranges_in_text(article):
-    clf = joblib.load('static/linear_jargon_classifier.pkl') 
-    
-    markup_list = []
-    
+    clf = joblib.load('static/linear_jargon_classifier.pkl')
+
+    mngram_list_by_sent = []
+    manual_list = []
+
+    stopwords_regex, punctuation_regex = create_regex_strings()
+
     sentences = nltk.sent_tokenize(article)
     words = nltk.word_tokenize(article)
     ngram_list = []
+    tag_list = []
+    # print(words)
+
     for sent in sentences:
         word_list = sent.split()
-        filtered_words = [word.lower() for word in word_list] # if word.lower() not in stopwords.words('english')
-        ngram_list.append([' '.join(x) for x in trigrams(filtered_words)])
-    ngram_list = [ngram for sublist in ngram_list for ngram in sublist]
-    manual_list = [(ngram.lower(), True) for ngram in words]# if ngram not in punctuation]
-#     manual_list = [("viz a viz", True), ("capablesomething",False), ("bottomline", True), ("ibuprofin", True), ("uninterested", False)]
+        filtered_words = [re.sub(r'[^\w\s]','',word.lower()) for word in word_list if word not in stopwords.words('english')]
+        mngram_list_by_sent.append([' '.join(x) for x in bigrams(filtered_words)])
+
+    for ngram_list in mngram_list_by_sent:
+        for ngram in ngram_list:
+            manual_list.append((ngram.lower(), True))
+
+    # mngram_list_by_sent = [ngram for sublist in ngram_list for ngram in sublist]
+    # manual_list = [(re.sub(r'[^\w\s]',' ',ngram.lower()), True) for ngram in words if ngram not in punctuation and len(ngram) > 1 and re.sub(r'[^\w\s]',' ',ngram.lower()).split()[0] not in stopwords.words('english')]
+    manual_list = []
+    for ngram in words:
+        # print(re.sub(r'[^\w\s]',' ',ngram.lower()).split())
+        if ngram in punctuation or len(re.sub(r'[^\w\s]',' ',ngram.lower()).split()) < 1:
+            continue
+        elif re.sub(r'[^\w\s]',' ',ngram.lower()).split()[0] in stopwords.words('english'):
+            continue
+        else:
+            manual_list.append((re.sub(r'[^\w\s]',' ',ngram.lower()), True))
+
     prediction_results = test_manual_predictions(manual_list , clf)
-    
-    draft_article = article
-    for word_index in range(len(words)):
+
+    draft_article = article.lower()
+    padding = 0
+    # print(manual_list)
+
+    prediction_results = adjust_classifier_biases(prediction_results, manual_list)
+    for word_index in range(len(manual_list)):
+        word = manual_list[word_index][0].split()[0]
+        index = draft_article.find(word)
+        if index == -1:
+            if prediction_results[word_index]:
+                print("Not Found: ", manual_list[word_index][0])
+            continue
+            # print("Not Found: ", word)
+        padding += index + len(manual_list[word_index][0])
+        draft_article = draft_article[index + len(manual_list[word_index][0]):]
+
         if prediction_results[word_index]:
-            index = draft_article.find(words[word_index])
-            markup_list.append((index, len(words[word_index])))
+            # print(word)
+            tag_list.append((padding - len(manual_list[word_index][0]), len(manual_list[word_index][0])))
+    #         ngram_list = manual_list[word_index][0].split(" ")
+    #         print(ngram_list)
+    #         regex_string = "(" + ngram_list[0] + punctuation_regex + "(" + stopwords_regex + punctuation_regex + ")*" + ngram_list[1] + ")" #+ punctuation_regex + "(" + stopwords_regex + punctuation_regex + ")*" + trigram_list[2] + ")"
+    # #         print(regex_string)
+    # #         print(article)
+    #         match = re.search(regex_string, draft_article)
+    #         if match is not None:
+    #             complete_ngram = match.group(0)
+    # #             print(trigram, complete_trigram)
+    #             index = draft_article.find(complete_ngram)
+    # #             print(index, complete_trigram)
+    #             index_len = len(complete_ngram)
+    #             tag_list.append((index, index_len))
+    # #             article = article[index+index_len:]
+    #         else:
+    # #              print("Not found: " + trigram)
+    #              continue
+
         else:
             continue
-        draft_article = draft_article[len(words[word_index]):]
-    
-    return markup_list
-            
+
+    return remove_overlapping_tags(tag_list)
+
 
 # In[112]:
 
@@ -145,7 +250,7 @@ def rule5_ranges_in_text(article):
 
 # In[24]:
 
-# clf = joblib.load('linear_jargon_classifier.pkl') 
+# clf = joblib.load('linear_jargon_classifier.pkl')
 
 
 # In[ ]:
@@ -154,6 +259,3 @@ def rule5_ranges_in_text(article):
 
 
 # In[ ]:
-
-
-
