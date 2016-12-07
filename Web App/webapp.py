@@ -46,8 +46,5 @@ def mark_file():
 	return append_text_marked_with_rules(file_text, rules)
 
 
-
-
-
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run()
