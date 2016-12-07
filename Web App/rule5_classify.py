@@ -64,7 +64,7 @@ def generate_features(candidate):
 #     features['continuous_vowels'] = get_first_repeating_vowels(word)
 #     features['has_letters'] = has_letters(word, 'yzwx')
     return dict(features)
-generate_features('veni vidi vici') 
+generate_features('veni vidi vici')
 
 
 # In[6]:
@@ -74,9 +74,9 @@ def get_wordnet_definition(candidate):
     words = word_tokenize(candidate)
     for word in words:
         synsets = wn.synsets(word)
-        
-    
-    
+
+
+
 
 
 # In[7]:
@@ -85,7 +85,7 @@ def get_wordnet_definition(candidate):
 # items is a list of (key, value) pairs from which features are extracted and training sets are made
 # Feature sets returned are dictionaries of features
 
-# This function also optionally returns the names of the training, development, 
+# This function also optionally returns the names of the training, development,
 # and test data for the purposes of error checking
 
 def create_training_sets (feature_function, items, return_items=False):
@@ -93,10 +93,10 @@ def create_training_sets (feature_function, items, return_items=False):
     # For names data, key is the name, and value is the gender
     shuffle(items)
     featuresets = [(feature_function(key), value, key) for (key, value) in items]
-    
+
     # Divided training and testing in thirds.  Could divide in other proportions instead.
     fifth = int(float(len(featuresets)) / 5.0)
-    
+
     train_set, dev_set, test_set = featuresets[0:fifth*4], featuresets[fifth*4:fifth*5], featuresets[fifth*4:]
     train_items, dev_items, test_items = items[0:fifth*4], items[fifth*4:fifth*5], items[fifth*4:]
     if return_items == True:
@@ -115,7 +115,7 @@ dataset_df = pd.read_csv("static/jargon_dataset.csv")
 items = []
 for index in range(len(dataset_df)):
     items.append((dataset_df["Jargon_Terms"][index], dataset_df["is_Jargon"][index]))
-    
+
 
 
 # In[10]:
@@ -239,7 +239,7 @@ kaggle_classifier = Pipeline([('union', FeatureUnion(
                                 ('svc', LinearSVC()),
                             ])
 kaggle_classifier = kaggle_classifier.fit(train_set,train_set_labels)
-    
+
 kaggle_predictions = kaggle_classifier.predict(test_set)
 
 accuracy_score(test_set_labels, kaggle_predictions)
@@ -253,31 +253,16 @@ manual_test_dict = create_manual_test_set(manual_list, generate_features)
 manual_predictions = kaggle_classifier.predict(manual_test_dict)
 
 
-# In[16]:
-
-# kaggle_classifier = Pipeline([('tfidfvect', TfidfVectorizer(analyzer='char', ngram_range=(2,4), sublinear_tf=True)),
-# #                                     ('feat',SelectKBest(chi2, 5)),
-#                                     ('classifier', LinearSVC())
-#                                    ])
-# kaggle_classifier = kaggle_classifier.fit(train_set_names,train_set_labels)
-    
-# kaggle_predictions = kaggle_classifier.predict(test_set_names)
-
-# accuracy_score(test_set_labels, kaggle_predictions)
-
-
-# In[17]:
-
 def test_manual_predictions(manual_list):
     manual_test_dict = create_manual_test_set(manual_list, generate_features)
     manual_predictions = kaggle_classifier.predict(manual_test_dict)
-    
-    
+
+
 
 
 # In[18]:
 
-# The True/False bit of the Tuple only needs to be accurate if you plan to test the accuracy using accuracy_score, 
+# The True/False bit of the Tuple only needs to be accurate if you plan to test the accuracy using accuracy_score,
 # else it isn't considered.
 manual_list = [("viz a viz", True), ("tete a tete",False), ("bottomline", True), ("ibuprofin", True), ("uninterested", False)]
 test_manual_predictions(manual_list)
@@ -286,10 +271,7 @@ test_manual_predictions(manual_list)
 # In[20]:
 
 def dump_stupid_pickle():
-    joblib.dump(kaggle_classifier, 'static/linear_jargon_classifier.pkl') 
+    joblib.dump(kaggle_classifier, 'static/linear_jargon_classifier.pkl')
 
 
 # In[21]:
-
-
-
