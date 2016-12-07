@@ -153,9 +153,12 @@ def adjust_classifier_biases(prediction_results, manual_list):
     for word_index in range(len(manual_list)):
         words =  manual_list[word_index][0].strip()
         if prediction_results[word_index]:
-            if words[:-2] == " s":
+            print(words[:-2])
+            if words[-2:] in (" s", " t", "'t"):
                 prediction_results[word_index] = False
             if is_number(words.strip()):
+                prediction_results[word_index] = False
+            if words.strip() in ("mr","mrs","usa"):
                 prediction_results[word_index] = False
     return prediction_results
 
@@ -172,7 +175,7 @@ def rule5_ranges_in_text(article):
     words = nltk.word_tokenize(article)
     ngram_list = []
     tag_list = []
-    print(words)
+    # print(words)
 
     for sent in sentences:
         word_list = sent.split()
@@ -184,13 +187,22 @@ def rule5_ranges_in_text(article):
             manual_list.append((ngram.lower(), True))
 
     # mngram_list_by_sent = [ngram for sublist in ngram_list for ngram in sublist]
-    manual_list = [(re.sub(r'[^\w\s]',' ',ngram.lower()), True) for ngram in words if ngram not in punctuation and len(ngram) > 1 and re.sub(r'[^\w\s]',' ',ngram.lower()).split()[0] not in stopwords.words('english')]
-#     manual_list = [("viz a viz", True), ("capablesomething",False), ("bottomline", True), ("ibuprofin", True), ("uninterested", False)]
+    # manual_list = [(re.sub(r'[^\w\s]',' ',ngram.lower()), True) for ngram in words if ngram not in punctuation and len(ngram) > 1 and re.sub(r'[^\w\s]',' ',ngram.lower()).split()[0] not in stopwords.words('english')]
+    manual_list = []
+    for ngram in words:
+        # print(re.sub(r'[^\w\s]',' ',ngram.lower()).split())
+        if ngram in punctuation or len(re.sub(r'[^\w\s]',' ',ngram.lower()).split()) < 1:
+            continue
+        elif re.sub(r'[^\w\s]',' ',ngram.lower()).split()[0] in stopwords.words('english'):
+            continue
+        else:
+            manual_list.append((re.sub(r'[^\w\s]',' ',ngram.lower()), True))
+
     prediction_results = test_manual_predictions(manual_list , clf)
 
     draft_article = article.lower()
     padding = 0
-    print(manual_list)
+    # print(manual_list)
 
     prediction_results = adjust_classifier_biases(prediction_results, manual_list)
     for word_index in range(len(manual_list)):
@@ -205,7 +217,7 @@ def rule5_ranges_in_text(article):
         draft_article = draft_article[index + len(manual_list[word_index][0]):]
 
         if prediction_results[word_index]:
-            print(word)
+            # print(word)
             tag_list.append((padding - len(manual_list[word_index][0]), len(manual_list[word_index][0])))
     #         ngram_list = manual_list[word_index][0].split(" ")
     #         print(ngram_list)
