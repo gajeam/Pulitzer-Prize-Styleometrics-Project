@@ -234,6 +234,8 @@ def rule2_ranges_in_text(text, nlp):
     for i in range(len(checked_words)):
         word, alt = checked_words[i]
         if alt is not None:
+            if word is not None:
+                print(alt + ' can be replaced by ' + word.text)
             ranges.append((character_count, len(word)))
         character_count += len(word.text_with_ws)
     return ranges

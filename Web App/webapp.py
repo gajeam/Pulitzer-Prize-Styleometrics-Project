@@ -25,7 +25,6 @@ def append_text_marked_with_rules(text, rules, doc):
 
 @app.route("/old")
 def old_tag_text():
-	print(request.args)
 	input_text = request.args.get('text', '')
 	rules = request.args.get('rules', '').split(',')
 	return append_text_marked_with_rules(input_text, rules, old_html_doc)
@@ -33,7 +32,6 @@ def old_tag_text():
 
 @app.route("/")
 def tag_text():
-	print(request.args)
 	input_text = request.args.get('text', '')
 	rules = request.args.get('rules', '').split(',')
 	return append_text_marked_with_rules(input_text, rules, html_doc)

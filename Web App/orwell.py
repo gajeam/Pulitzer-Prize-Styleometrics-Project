@@ -52,7 +52,6 @@ def build_tag_ranges_for_text(text, rules):
 
 
 def text_marked_up_with_tags(text, rules):
-	print(rules)
 	marked_tags = build_tag_ranges_for_text(text, rules)
 	# Turn the tags into open and closed tags
 	open_tag_indices = [(text_range[0], start_tag_with_rule(rule)) for (rule, text_range) in marked_tags]
@@ -79,9 +78,7 @@ def end_tag():
 
 def marked_html_from_text(text, rules=ALL_RULES):
 	# rules = [TAG_RULE4]
+	text = text.replace('\n', ' ')
 	marked_text = text_marked_up_with_tags(text, rules)
 	marked_text = '<p>' + marked_text + '</p>'
-	marked_text = marked_text.replace('\n', '</p><p>')
 	return marked_text
-
-# print(marked_html_from_text('He was eaten by a shark. And that is kind of interesting because sharks are tremendously cool.', [TAG_RULE4]))
