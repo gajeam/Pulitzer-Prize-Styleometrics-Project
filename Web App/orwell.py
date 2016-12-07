@@ -27,7 +27,7 @@ ALL_RULES = [TAG_RULE1S_TRITE, TAG_RULE1S_NOT_TRITE, TAG_RULE1M, TAG_RULE2, TAG_
 print('Loading spacy model...')
 nlp = English()
 
-def build_tag_ranges_for_text(text, rules=ALL_RULES):
+def build_tag_ranges_for_text(text, rules):
 	all_tags = []
 	for rule in rules:
 		print('Calculating tags for ' + rule)
@@ -73,7 +73,7 @@ def start_tag_with_rule(rule, debug=False):
 def end_tag():
 	return '</span>'
 
-def marked_html_from_text(text, rules):
+def marked_html_from_text(text, rules=ALL_RULES):
 	# rules = [TAG_RULE4]
 	marked_text = text_marked_up_with_tags(text, rules)
 	marked_text = '<p>' + marked_text + '</p>'
