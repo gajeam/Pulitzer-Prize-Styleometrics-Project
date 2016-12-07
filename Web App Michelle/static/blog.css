@@ -48,7 +48,7 @@ h6, .h6 {
   padding: 10px;
   font-weight: 500;
   color: #cdddeb;
-  font-size: 16pt;
+  font-size: 14pt;
 }
 .blog-nav-item:hover,
 .blog-nav-item:focus {
@@ -113,7 +113,8 @@ h6, .h6 {
 }
 .btn-rules {
   color: #fff;
-  margin-top: 10px;
+  margin-top: 20px;
+  margin-left: 5px;
   font-size: 20px;
 }
 
@@ -138,10 +139,54 @@ h6, .h6 {
 }
 
 .btn-metaphor{
+}
+
+.btn-cutword{
+  background-color: #f0ad4e;
+  border-color: #eea236;
+}
+
+.btn-cutword{
+  color: #fff;
   background-color: #f3827f;
   border-color: #f19491;
 }
-
+.btn-cutword:focus,
+.btn-cutword.focus {
+  color: #fff;
+  background-color: #f19491;
+  border-color: #f19491;
+}
+.btn-cutword:hover {
+  color: #fff;
+  background-color: #f19491;
+  border-color: #f19491;
+}
+.btn-cutword:active,
+.btn-cutword.active,
+.open > .dropdown-toggle.btn-cutword {
+  color: #fff;
+  background-color: #f19491;
+  border-color: #f19491;
+}
+.btn-cutword:active:hover,
+.btn-cutword.active:hover,
+.open > .dropdown-toggle.btn-cutword:hover,
+.btn-cutword:active:focus,
+.btn-cutword.active:focus,
+.open > .dropdown-toggle.btn-cutword:focus,
+.btn-cutword:active.focus,
+.btn-cutword.active.focus,
+.open > .dropdown-toggle.btn-cutword.focus {
+  color: #fff;
+  background-color: #f19491;
+  border-color: #f19491;
+}
+.btn-cutword:active,
+.btn-cutword.active,
+.open > .dropdown-toggle.btn-cutword {
+  background-image: none;
+}
 
 /* Sidebar modules for boxing content */
 .sidebar-module {
