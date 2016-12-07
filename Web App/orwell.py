@@ -9,7 +9,7 @@ print('Loading Rule 4...')
 import rule4
 
 ## Constants
-TAG_RULE1S_TRITE = 'rule1s_trite'
+TAG_RULE1S_TRITE = 'rule1s'
 TAG_RULE1S_NOT_TRITE = 'rule1s_not_trite'
 TAG_RULE1M = 'rule1m'
 TAG_RULE2 = 'rule2'
@@ -64,6 +64,8 @@ def end_tag():
 def marked_html_from_text(text, rules):
 	# rules = [TAG_RULE4]
 	marked_text = text_marked_up_with_tags(text, rules)
-	return '<p>' + marked_text + '</p>'
+	marked_text = '<p>' + marked_text + '</p>'
+	marked_text = marked_text.replace('\n', '</p><p>')
+	return marked_text
 
 # print(marked_html_from_text('He was eaten by a shark. And that is kind of interesting because sharks are tremendously cool.', [TAG_RULE4]))
