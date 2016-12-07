@@ -5,7 +5,7 @@
 
 # In[17]:
 
-get_ipython().magic('matplotlib inline')
+# get_ipython().magic('matplotlib inline')
 import nltk
 from nltk.corpus import names
 import random
@@ -23,7 +23,7 @@ from nltk import trigrams
 # In[18]:
 
 def read_article_for_metaphor(article):
-    f = open(‘static/my_classifier.pickle', 'rb')
+    f = open('static/my_classifier.pickle', 'rb')
     cl = pickle.load(f)
     f.close()
     
@@ -99,7 +99,7 @@ def metaphor_features(word):
 # In[20]:
 
 # with open("sciencearticle.txt", "r") as testset:
-def Rule1_metaphor(article):
+def rule1m_ranges_in_text(article):
     article = article.lower()
     word_list = ''
     highlight_bucket = []
@@ -128,28 +128,6 @@ def Rule1_metaphor(article):
 #              print("Not found: " + trigram)
              continue
     
-#     for line in testset:
-# #         print(line)
-#         for trigram in metaphor_list:
-#             trigram_list = trigram.split()
-#             index = line.find(trigram_list[0])
-#             index_len = len(trigram)
-#             highlight_bucket.append(line[index:index+index_len])
-#             line = line[index+index_len:]
-#         print(highlight_bucket)
-#         len(highlight_bucket)
         
     return tag_list
-
-
-# In[23]:
-
-# with open("sciencearticle.txt", "r") as testset:   
-# #     print(metaphor_list)
-#     print(Rule1_metaphor(testset.read()))
-
-
-# In[ ]:
-
-
 

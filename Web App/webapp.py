@@ -2,7 +2,7 @@ from bs4 import BeautifulSoup
 from flask import Flask
 from flask import request
 
-# import orwell
+import orwell
 
 # Global variables
 app = Flask(__name__)
@@ -12,7 +12,7 @@ with open('index.html', 'r') as f:
 
 
 def append_text_marked_with_rules(text, rules):
-	# text = orwell.marked_html_from_text(text, rules)	
+	text = orwell.marked_html_from_text(text, rules)	
 	soup = BeautifulSoup(html_doc, 'html.parser')
 	print(text)
 	analyzed_text = soup.find(id='analyzed_text')
