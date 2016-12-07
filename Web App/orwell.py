@@ -1,6 +1,8 @@
 import collections
 from spacy.en import English
 
+print('Loading Rule 5...')
+import rule5
 print('Loading Rule 1...')
 import rule1
 print('Loading Rule 2...')
@@ -39,6 +41,9 @@ def build_tag_ranges_for_text(text, rules=ALL_RULES):
 			all_tags.extend([(rule, tag_range) for tag_range in rule3.rule3_ranges_in_text(text)])
 		if rule == TAG_RULE4:
 			all_tags.extend([(rule, tag_range) for tag_range in rule4.rule4_ranges_in_text(text, nlp)])
+		if rule == TAG_RULE5:
+			all_tags.extend([(rule, tag_range) for tag_range in rule5.rule5_ranges_in_text(text)])
+
 	return all_tags
 
 
