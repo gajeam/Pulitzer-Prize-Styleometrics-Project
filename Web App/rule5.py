@@ -141,6 +141,23 @@ def remove_overlapping_tags(tag_list):
     print(tag_list)
     return tag_list
 
+def is_number(s):
+    try:
+        float(s)
+        return True
+    except ValueError:
+        return False
+
+def adjust_classifier_biases(prediction_results, manual_list):
+    for word_index in range(len(manual_list)):
+        words =  manual_list[word_index][0].strip()
+        if prediction_results[word_index]:
+            if words[:-2] == " s":
+                prediction_results[word_index] = False
+            if is_number(words.strip()):
+                prediction_results[word_index] = False
+    return prediction_results
+
 
 def rule5_ranges_in_text(article):
     clf = joblib.load('static/linear_jargon_classifier.pkl')
@@ -173,6 +190,8 @@ def rule5_ranges_in_text(article):
     draft_article = article.lower()
     padding = 0
     print(manual_list)
+
+    prediction_results = adjust_classifier_biases(prediction_results, manual_list)
     for word_index in range(len(manual_list)):
         word = manual_list[word_index][0].split()[0]
         index = draft_article.find(word)
