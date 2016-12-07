@@ -118,9 +118,32 @@
     text = getParameterByName('text')
     rule = getParameterByName('rules')
 
+    function buttonClassForRule(rule){
+      if (rule == "rule1m") {
+        return "btn-danger";
+      } if (rule == "rule1s,rule1s_not_trite") {
+        return "btn-info";
+      } if (rule == "rule2") {
+        return "btn-primary";
+      } if (rule == "rule3") {
+        return "btn-cutword";
+      } if (rule == "rule4") {
+        return "btn-success";
+      } if (rule == "rule5") {
+        return "btn-warning";
+      }
+      return "btn-primary";
+    }
     if (rule != null) {
         $('input[name="rulevalue"]').val(rule);
     }
+    $('#submitnew').addClass(buttonClassForRule(rule));
+              //     <li><a href="#"><button type="button" class="btn btn-rules btn-long btn-primary" id="rule2">Long Words</button></a> </li>
+              // <li><a href="#"><button type="button" class="btn btn-rules btn-passive btn btn-success" id="rule4">Passive Voice</button></a></li>
+              // <li><a href="#"><button type="button" class="btn btn-rules btn-jargon btn-warning" id = "rule5">Jargon</button></a></li>
+              // <li><a href="#"><button type="button" class="btn btn-rules btn-similie btn-info" id = "rule1s,rule1s_not_trite">Trite Similes</button></a></li>
+              // <li><a href="#"><button type="button" class="btn btn-rules btn-metaphor btn-danger" id = "rule1m">Trite Metaphors</button></a></li>
+              // <li><a href="#"><button type="button" class="btn btn-rules btn-cutword" id="rule3">Unnecessary Words</button></a></li>
     if (text != null) {
         $("#textarea").val(text);
     }
@@ -173,7 +196,7 @@
                 <textarea name="text" rows=15 cols=50 form="inputform" id="textarea" ></textarea>
                 <form id='inputform'>
                   <input id='textfile' type="hidden" name="textfile" value="">
-                  <input name='markuptext' type="submit" value="Submit" type="button" class="btn btn-primary btn-lg btn-sub" id="submitnew" padding-top="10px" >
+                  <input name='markuptext' type="submit" value="Submit" type="button" class="btn btn-lg btn-sub" id="submitnew" padding-top="10px" >
                   <input type='hidden' name='rulevalue' value='norules'/>
                 </form>
           </div>
@@ -187,9 +210,9 @@
               <li><a href="#"><button type="button" class="btn btn-rules btn-long btn-primary" id="rule2">Long Words</button></a> </li>
               <li><a href="#"><button type="button" class="btn btn-rules btn-passive btn btn-success" id="rule4">Passive Voice</button></a></li>
               <li><a href="#"><button type="button" class="btn btn-rules btn-jargon btn-warning" id = "rule5">Jargon</button></a></li>
-              <li><a href="#"><button type="button" class="btn btn-rules btn-similie btn-info" id = "rule1s,rule1s_not_trite">Similie</button></a></li>
-              <li><a href="#"><button type="button" class="btn btn-rules btn-metaphor btn-danger" id = "rule1m">Metaphor</button></a></li>
-              <li><a href="#"><button type="button" class="btn btn-rules btn-cutword" id="rule3">Brevity</button></a></li>
+              <li><a href="#"><button type="button" class="btn btn-rules btn-similie btn-info" id = "rule1s,rule1s_not_trite">Trite Similes</button></a></li>
+              <li><a href="#"><button type="button" class="btn btn-rules btn-metaphor btn-danger" id = "rule1m">Trite Metaphors</button></a></li>
+              <li><a href="#"><button type="button" class="btn btn-rules btn-cutword" id="rule3">Unnecessary Words</button></a></li>
             </ol>
           </div>
           <div class="sidebar-module sidebar-module-inset">
