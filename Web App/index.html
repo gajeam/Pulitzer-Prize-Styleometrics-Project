@@ -85,7 +85,8 @@
           url += "?"
         }
         url = url.substring(0, index + 1)
-        url += "rules=rule4"
+        rule =  $('input[name="rulevalue"]').val();
+        url += "rules=" + rule
 
         text = $("#textarea").val();
         if (text.length != 0) {
@@ -94,6 +95,36 @@
         window.location.href = url;
 
       });
+      $('.btn-rules').click(function() {
+        ruleval = $(this).attr('id')
+        $('input[name="rulevalue"]').val(ruleval);
+        $('#submitnew').trigger('click')
+      });
+
+    // Shout out to StackOverflow for this one
+    // http://stackoverflow.com/a/901144/1031615
+    function getParameterByName(name, url) {
+    if (!url) {
+      url = window.location.href;
+    }
+    name = name.replace(/[\[\]]/g, "\\$&");
+    var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+        results = regex.exec(url);
+    if (!results) return null;
+    if (!results[2]) return '';
+    return decodeURIComponent(results[2].replace(/\+/g, " "));
+    }
+
+    text = getParameterByName('text')
+    rule = getParameterByName('rules')
+
+    if (rule != null) {
+        $('input[name="rulevalue"]').val(rule);
+    }
+    if (text != null) {
+        $("#textarea").val(text);
+    }
+
   });
   })(jQuery);
   </script>
@@ -143,7 +174,7 @@
                 <form id='inputform'>
                   <input id='textfile' type="hidden" name="textfile" value="">
                   <input name='markuptext' type="submit" value="Submit" type="button" class="btn btn-primary btn-lg btn-sub" id="submitnew" padding-top="10px" >
-                  <input type='hidden' name='rules' value='rule5'/>
+                  <input type='hidden' name='rulevalue' value='rule5'/>
                 </form>
           </div>
 
@@ -153,12 +184,12 @@
           <div class="sidebar-module">
             <h4>Check one of Orwell's Rules:</h4>
             <ol class="list-unstyled">
-              <li><a href="#"><button type="button" class="btn btn-rules btn-long btn-primary" id="longcompute">Long Words</button></a> </li>
-              <li><a href="#"><button type="button" class="btn btn-rules btn-passive btn btn-success" id="passivecompute">Passive Voice</button></a></li>
-              <li><a href="#"><button type="button" class="btn btn-rules btn-similie btn-info">Similie</button></a></li>
-              <li><a href="#"><button type="button" class="btn btn-rules btn-jargon btn-warning">Jargon</button></a></li>
-              <li><a href="#"><button type="button" class="btn btn-rules btn-metaphor btn-danger">Metaphor</button></a></li>
-              <li><a href="#"><button type="button" class="btn btn-rules btn-cutword">Brevity</button></a></li>
+              <li><a href="#"><button type="button" class="btn btn-rules btn-long btn-primary" id="rule2">Long Words</button></a> </li>
+              <li><a href="#"><button type="button" class="btn btn-rules btn-passive btn btn-success" id="rule4">Passive Voice</button></a></li>
+              <li><a href="#"><button type="button" class="btn btn-rules btn-jargon btn-warning" id = "rule5">Jargon</button></a></li>
+              <li><a href="#"><button type="button" class="btn btn-rules btn-similie btn-info" id = "rule1s,rule1s_not_trite">Similie</button></a></li>
+              <li><a href="#"><button type="button" class="btn btn-rules btn-metaphor btn-danger" id = "rule1m">Metaphor</button></a></li>
+              <li><a href="#"><button type="button" class="btn btn-rules btn-cutword" id="rule3">Brevity</button></a></li>
             </ol>
           </div>
           <div class="sidebar-module sidebar-module-inset">

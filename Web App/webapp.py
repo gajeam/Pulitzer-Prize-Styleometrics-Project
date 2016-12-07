@@ -3,7 +3,7 @@ from flask import Flask
 from flask import request
 import codecs
 
-# import orwell
+import orwell
 
 # Global variables
 app = Flask(__name__)
@@ -16,9 +16,8 @@ with(codecs.open('index_orig.html')) as of:
 	old_html_doc = of.read()
 
 def append_text_marked_with_rules(text, rules, doc):
-	# text = orwell.marked_html_from_text(text, rules)	
+	text = orwell.marked_html_from_text(text, rules)	
 	soup = BeautifulSoup(doc, 'html.parser')
-	print(text)
 	analyzed_text = soup.find(id='analyzed_text')
 	analyzed_text.append(BeautifulSoup(text, 'html.parser'))
 	return soup.prettify()
@@ -26,7 +25,6 @@ def append_text_marked_with_rules(text, rules, doc):
 
 @app.route("/old")
 def old_tag_text():
-	print('Got args!')
 	print(request.args)
 	input_text = request.args.get('text', '')
 	rules = request.args.get('rules', '').split(',')
@@ -35,7 +33,6 @@ def old_tag_text():
 
 @app.route("/")
 def tag_text():
-	print('Got args!')
 	print(request.args)
 	input_text = request.args.get('text', '')
 	rules = request.args.get('rules', '').split(',')
