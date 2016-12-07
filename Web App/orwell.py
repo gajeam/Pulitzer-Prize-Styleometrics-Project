@@ -2,11 +2,11 @@ import collections
 from spacy.en import English
 
 print('Loading Rule 2...')
-import Rule2.Rule2 as rule2
+import rule2
 print('Loading Rule 3...')
-import Rule3.Rule3 as rule3
+import rule3
 print('Loading Rule 4...')
-import Rule4.Rule4_Active_vs_Passive_Voice as rule4
+import rule4
 
 ## Constants
 TAG_RULE1S = 'rule1s'
@@ -37,8 +37,8 @@ def build_tag_ranges_for_text(text, rules=ALL_RULES):
 def text_marked_up_with_tags(text):
 	marked_tags = build_tag_ranges_for_text(text)
 	# Turn the tags into open and closed tags
-	open_tag_indices = [(text_range[0], '<' + rule + '>') for (rule, text_range) in marked_tags]
-	closed_tag_indices = [(text_range[0] + text_range[1], '</' + rule + '>') for (rule, text_range) in marked_tags]
+	open_tag_indices = [(text_range[0], OPEN_BRACE + rule + CLOSED_BRACE) for (rule, text_range) in marked_tags]
+	closed_tag_indices = [(text_range[0] + text_range[1], OPEN_BRACE + '/' + rule + CLOSED_BRACE) for (rule, text_range) in marked_tags]
 	tag_dictionary = collections.defaultdict(list)
 	for (index, tag) in  open_tag_indices + closed_tag_indices:
 		tag_dictionary[index].append(tag)
@@ -51,4 +51,16 @@ def text_marked_up_with_tags(text):
 	    new_text += text[i]
 	return new_text
 
-print(text_marked_up_with_tags('He was eaten by a shark. And that is kind of interesting because sharks are tremendously cool.'))
+
+def start_tag_with_rule(rule, debug=False):
+	if debug == True:
+		return '(' + rule + ')'
+	return '<span class = "' + rule + '"">'
+def end_tag():
+	return 
+
+def marked_html_from_text(text):
+	marked_text = text_marked_up_with_tags(text)
+	return '<p>' + marked_text + '</p>'
+
+

@@ -15,7 +15,6 @@ import nltk
 import pprint as pp
 import re
 import spacy
-import sys
 import time
 
 from google_ngram_downloader import readline_google_store
@@ -29,12 +28,16 @@ from nltk.wsd import lesk
 
 # Some of this code was directly copied from Rule #5
 # We use it to minimize the words we need to check for because it's a computationally heavy task
-def google_most_common_words(n_most_common=10000):
-    google_most_common_words_path = sys.path[1] + '/Texts/google-10000-english-usa.txt'
+def google_most_common_words(n_most_common=20000):
+    google_most_common_words_path = 'data/20k.txt'
     most_common_words = []
-    with open(google_most_common_words_path, 'r') as f:
+    try:
+        f = open(google_most_common_words_path, 'r')
         for i in range(n_most_common):
             most_common_words.append(f.readline().strip())
+    except:
+        print('Bad file path ' + google_most_common_words_path)
+        most_common_words = []
     return most_common_words
 
 

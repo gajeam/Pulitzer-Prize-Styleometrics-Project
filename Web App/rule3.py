@@ -15,7 +15,7 @@ import sys
 # In[2]:
 
 def load_unnecesary_regexes():
-    filename = sys.path[1] + '/Rule3/unnecessary_words.csv'
+    filename = 'data/unnecessary_words.csv'
     try:
         f = open(filename)
     except:
