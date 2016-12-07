@@ -18,7 +18,7 @@
     <link href="../../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="blog.css" rel="stylesheet">
+    <link href="static/blog.css" rel="stylesheet">
 
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
@@ -70,9 +70,11 @@
             <p class="blog-post-meta">January 1, 2014 by <a href="#">Mark</a></p>
 
               <div id = "analyzed_text">
-                <p>"Wow, this is so wonderful. A+ all around!"</p>
-                <p>—Marti Hearst</p>
               </div>
+                <textarea class="form-control" name="text" rows=10 cols=50 form="inputform" ></textarea>
+                <form id='inputform'>
+                  <input name='markuptext' type="submit" value="Submit">
+                </form>
           </div><!-- /.blog-post -->
 
 
