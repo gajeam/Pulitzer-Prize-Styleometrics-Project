@@ -1,8 +1,8 @@
 import collections
 from spacy.en import English
 
-print('Loading Rule 1s...')
-import rule1 as rule1s
+# print('Loading Rule 1s...')
+# import rule1 as rule1s
 print('Loading Rule 1m...')
 import rule1m
 print('Loading Rule 2...')
@@ -33,10 +33,10 @@ def build_tag_ranges_for_text(text, rules):
 	all_tags = []
 	for rule in rules:
 		print('Calculating tags for ' + rule)
-		if rule == TAG_RULE1S_TRITE:
-			all_tags.extend([(rule, tag_range) for tag_range in rule1s.trite_similes(text)])
-		if rule == TAG_RULE1S_NOT_TRITE:
-			all_tags.extend([(rule, tag_range) for tag_range in rule1s.nontrite_similes(text)])
+		# if rule == TAG_RULE1S_TRITE:
+		# 	all_tags.extend([(rule, tag_range) for tag_range in rule1s.trite_similes(text)])
+		# if rule == TAG_RULE1S_NOT_TRITE:
+		# 	all_tags.extend([(rule, tag_range) for tag_range in rule1s.nontrite_similes(text)])
 		if rule == TAG_RULE1M:
 			all_tags.extend([(rule, tag_range) for tag_range in rule1m.rule1m_ranges_in_text(text)])
 		if rule == TAG_RULE2:
