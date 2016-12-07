@@ -48,7 +48,7 @@ h6, .h6 {
   padding: 10px;
   font-weight: 500;
   color: #cdddeb;
-  font-size: 16pt;
+  font-size: 14pt;
 }
 .blog-nav-item:hover,
 .blog-nav-item:focus {
@@ -113,7 +113,8 @@ h6, .h6 {
 }
 .btn-rules {
   color: #fff;
-  margin-top: 10px;
+  margin-top: 20px;
+  margin-left: 5px;
   font-size: 20px;
 }
 
