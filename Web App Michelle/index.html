@@ -9,10 +9,10 @@
     <meta name="author" content="">
     <link rel="icon" href="../../favicon.ico">
 
-    <title>Orwell's Rules - NLP Final Project Fall 2016</title>
+    <title>Orwell's Rules For Writing - NLP Final Project Fall 2016</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../static/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <link href="../../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
@@ -28,7 +28,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
   <!-- Optional theme -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+<!--   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous"> -->
 
   <!-- Latest compiled and minified JavaScript -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
@@ -57,8 +57,8 @@
     <div class="container">
 
       <div class="blog-header">
-        <h1 class="blog-title">Orwell's Rules</h1>
-        <p class="lead blog-description">Do Orwell's Rules make sense? Idk! Everything is a metaphor! Gabe, Sayan, Natasha, Michelle</p>
+        <h1 class="blog-title">Orwell's Rules for Writing</h1>
+        <p class="lead blog-description">How often does good writing follow Orwell's Rules?</p>
       </div>
 
       <div class="row">
@@ -67,41 +67,41 @@
 
           <div class="blog-post">
             <h2 class="blog-post-title" id="article-title">Article Title</h2>
-            <p class="blog-post-meta">January 1, 2014 by <a href="#">Mark</a></p>
+            <p class="blog-post-meta">Author</p>
 
               <div id = "analyzed_text">
               </div>
                 <textarea class="form-control" name="text" rows=10 cols=50 form="inputform" ></textarea>
                 <form id='inputform'>
-                  <input name='markuptext' type="submit" value="Submit">
+                  <input name='markuptext' type="submit" value="Submit" type="button" class="btn btn-primary btn-lg btn-sub" padding-top="10px" >
                 </form>
           </div><!-- /.blog-post -->
-
-
-          <nav>
-            <ul class="pager">
-              <li><a href="#">Previous</a></li>
-              <li><a href="#">Next</a></li>
-            </ul>
-          </nav>
 
         </div><!-- /.blog-main -->
 
         <div class="col-sm-3 col-sm-offset-1 blog-sidebar">
-          <div class="sidebar-module sidebar-module-inset">
-            <h4>About</h4>
-            <p>Our Team is the DOPEST</p>
-          </div>
           <div class="sidebar-module">
-            <h4>Highlight certain Orwellian Rules...</h4>
+            <h4>Check one of Orwell's Rules:</h4>
             <ol class="list-unstyled">
-              <li><a href="#">Rule 1 Tagged by Human</a></li>
-              <li><a href="#">Rule 2</a></li>
-              <li><a href="#">Rule 3</a></li>
-              <li><a href="#">Rule 4</a></li>
-              <li><a href="#">Rule 5</a></li>
-              <li><a href="#">Rule 6</a></li>
+              <li><a href="#"><button type="button" class="btn btn-rules btn-long btn-primary">Long Words</button></a></li>
+              <li><a href="#"><button type="button" class="btn btn-rules btn-passive btn btn-success">Passive Voice</button></a></li>
+              <li><a href="#"><button type="button" class="btn btn-rules btn-similie btn-info">Similie</button></a></li>
+              <li><a href="#"><button type="button" class="btn btn-rules btn-jargon btn-warning">Jargon</button></a></li>
+              <li><a href="#"><button type="button" class="btn btn-rules btn-metaphor btn-danger">Metaphor</button></a></li>
             </ol>
+          </div>
+          <div class="sidebar-module sidebar-module-inset">
+            <h4>Orwell's Rules:</h4>
+            <p>
+            <ol class="list-unstyled">
+              <li>1. Never use a metaphor, simile, or other figure of speech which you are used to seeing in print.</li>
+              <li>2. Never use a long word where a short one will do.</li>
+              <li>3. If it is possible to cut a word out, always cut it out.</li>
+              <li>4. Never use the passive where you can use the active.</li>
+              <li>5. Never use a foreign phrase, a scientific word, or a jargon word if you can think of an everyday English equivalent.</li>
+              <li>6. Break any of these rules sooner than say anything outright barbarous.</li>
+            </ol>
+            </p>
           </div>
         </div><!-- /.blog-sidebar -->
 
@@ -110,10 +110,9 @@
     </div><!-- /.container -->
 
     <footer class="blog-footer">
+      <p>A Natural Language Processing Final Project by Gabe, Sayan, Natasha, Michelle</p>
+      <p>NLP 256, Professor Hearst, School of Information, UC Berkeley</p>
       <p>Blog template built for <a href="http://getbootstrap.com">Bootstrap</a> by <a href="https://twitter.com/mdo">@mdo</a>.</p>
-      <p>
-        <a href="#">Back to top</a>
-      </p>
     </footer>
 
 
@@ -121,9 +120,9 @@
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
-    <script src="../../dist/js/bootstrap.min.js"></script>
+    <script>window.jQuery || document.write('<script src="static/assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="static/dist/js/bootstrap.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+    <script src="static/assets/js/ie10-viewport-bug-workaround.js"></script>
   </body>
 </html>

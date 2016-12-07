@@ -104,6 +104,45 @@ h6, .h6 {
   line-height: 1.5;
 }
 
+
+.btn-sub {
+  margin-top: 20px;
+}
+.btn-primary a{
+  color:#000;
+}
+.btn-rules {
+  color: #fff;
+  margin-top: 10px;
+  font-size: 20px;
+}
+
+.btn-long {
+  background-color: #337ab7;
+  border-color: #2e6da4;
+}
+
+.btn-passive{
+  background-color: #5cb85c;
+  border-color: #4cae4c;
+}
+
+.btn-similie{
+  background-color: #5bc0de;
+  border-color: #46b8da;
+}
+
+.btn-jargon{
+  background-color: #f0ad4e;
+  border-color: #eea236;
+}
+
+.btn-metaphor{
+  background-color: #f3827f;
+  border-color: #f19491;
+}
+
+
 /* Sidebar modules for boxing content */
 .sidebar-module {
   padding: 15px;
