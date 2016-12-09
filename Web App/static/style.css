@@ -139,51 +139,46 @@ h6, .h6 {
   border-color: #eea236;
 }
 
-.btn-metaphor{
-  background-color: rgb(201, 48, 44);
-  border-color: #c9302c 
-}
-
-.btn-cutword{
+.btn-meta{
 	color: #fff;
   background-color: #f3827f;
   border-color: rgb(241, 148, 145);
 }
 
-.btn-cutword:focus,
-.btn-cutword.focus {
+.btn-meta:focus,
+.btn-meta.focus {
   color: #fff;
   background-color: rgb(241, 148, 145);
   border-color: rgb(241, 148, 145);
 }
-.btn-cutword:hover {
+.btn-meta:hover {
   color: #fff;
   background-color: rgb(241, 148, 145);
   border-color: rgb(241, 148, 145);
 }
-.btn-cutword:active,
-.btn-cutword.active,
-.open > .dropdown-toggle.btn-cutword {
+.btn-meta:active,
+.btn-meta.active,
+.open > .dropdown-toggle.btn-meta {
   color: #fff;
   background-color: rgb(241, 148, 145);
   border-color: rgb(241, 148, 145);
 }
-.btn-cutword:active:hover,
-.btn-cutword.active:hover,
-.open > .dropdown-toggle.btn-cutword:hover,
-.btn-cutword:active:focus,
-.btn-cutword.active:focus,
-.open > .dropdown-toggle.btn-cutword:focus,
-.btn-cutword:active.focus,
-.btn-cutword.active.focus,
-.open > .dropdown-toggle.btn-cutword.focus {
+.btn-meta:active:hover,
+.btn-meta.active:hover,
+.open > .dropdown-toggle.btn-meta:hover,
+.btn-meta:active:focus,
+.btn-meta.active:focus,
+.open > .dropdown-toggle.btn-meta:focus,
+.btn-meta:active.focus,
+.btn-meta.active.focus,
+.open > .dropdown-toggle.btn-meta.focus {
   color: #fff;
   background-color: rgb(241, 148, 145);
   border-color: rgb(241, 148, 145);
 }
-.btn-cutword:active,
-.btn-cutword.active,
-.open > .dropdown-toggle.btn-cutword {
+.btn-meta:active,
+.btn-meta.active,
+.open > .dropdown-toggle.btn-meta {
   background-image: none;
 }
 
@@ -265,15 +260,14 @@ h6, .h6 {
 }
 
 .rule1m {
-  background-color: rgba(201, 48, 44, 1.0);
-
+    background-color: rgba(241, 148, 145, 0.8);
 }
 .rule2 { 
-  background-color: rgba(51, 122, 183, 0.8);
+    background-color: rgba(51, 122, 183, 0.8);
 }
 
 .rule3 { 
-  background-color: rgba(241, 148, 145, 0.8);
+        background-color: rgba(201, 48, 44, 0.7);
 }
 
 .rule4 {

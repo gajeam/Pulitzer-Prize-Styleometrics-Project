@@ -76,7 +76,7 @@
     }
 
     text = getParameterByName('text');
-    rule = getParameterByName('rulevalue');
+    therule = getParameterByName('rules');
     showinput = getParameterByName('showinput');
     function buttonClassForRule(rule){
       if (rule == "rule1m") {
@@ -94,12 +94,12 @@
       }
       return "btn-primary";
     }
-    if (rule != null) {
-        $('input[name="rulevalue"]').val(rule);
+    if (therule != null) {
+        $('input[name="rulevalue"]').val(therule);
     } else {
 	    $('input[name="rulevalue"]').val('rule5');
     }
-    $('#submitnew').addClass(buttonClassForRule(rule));
+    $('#submitnew').addClass(buttonClassForRule(therule));
     if (text != null) {
         $("#inputtext").val(text);
     }
