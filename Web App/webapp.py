@@ -8,12 +8,9 @@ import orwell
 # Global variables
 app = Flask(__name__)
 
-
 with(codecs.open('index.html')) as f:
 	html_doc = f.read()
 
-with(codecs.open('index_orig.html')) as of:
-	old_html_doc = of.read()
 
 def append_text_marked_with_rules(text, rules, doc):
 	text = orwell.marked_html_from_text(text, rules)	
@@ -21,13 +18,6 @@ def append_text_marked_with_rules(text, rules, doc):
 	analyzed_text = soup.find(id='analyzed_text')
 	analyzed_text.append(BeautifulSoup(text, 'html.parser'))
 	return soup.prettify()
-
-
-@app.route("/old")
-def old_tag_text():
-	input_text = request.args.get('text', '')
-	rules = request.args.get('rules', '').split(',')
-	return append_text_marked_with_rules(input_text, rules, old_html_doc)
 
 
 @app.route("/")

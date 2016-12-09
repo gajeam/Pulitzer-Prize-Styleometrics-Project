@@ -80,5 +80,4 @@ def marked_html_from_text(text, rules=ALL_RULES):
 	# rules = [TAG_RULE4]
 	text = text.replace('\n', ' ')
 	marked_text = text_marked_up_with_tags(text, rules)
-	marked_text = '<p>' + marked_text + '</p>'
 	return marked_text

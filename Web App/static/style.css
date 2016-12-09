@@ -249,7 +249,13 @@ h6, .h6 {
   margin-bottom: 0;
 }
 
+/*
+ * Custom CSS for Orwell
+ */
 
+.invisible {
+  display: none;
+}
 .rule1s {
   background-color: rgba(91, 192, 222, 1.0);
 }
