@@ -1,6 +1,3 @@
-Tesla seals $2 billion SolarCity deal set to test Elon Musk's vision
-Dana Hull and Christopher Martin, Bloomberg
-
 Tesla Motors Inc. and SolarCity Corp. shareholders approved the electric-car maker’s purchase of the solar installer in a deal designed to test their shared Chairman Elon Musk’s vision for a viable <rule5>one-stop shop</rule5> for clean energy consumers.
 
 More than 85 percent of Tesla shares voted in favor of the deal, the Palo Alto company said Thursday, adding that SolarCity shareholders also approved the <rule5>acquisition</rule5>. The deal, valued at about $2 billion, integrates the maker of Model S and upcoming Model 3 sedans with the San Mateo installer of rooftop solar panels.
@@ -17,7 +14,7 @@ The quarterly profit Tesla reported last month was the first in eight quarters. 
 
 Investor Jim Chanos, whose firm Kynikos Associates Ltd. saw weakness in Enron Inc. before its collapse, has been highly critical of the merger, in part because of the $2.89 billion in SolarCity debt Tesla will be taking on.
 
-The deal drew mixed recommendations from proxy advisory firms, with Institutional Shareholder Services giving its blessing and Glass Lewis & Co. rejecting it as a “thinly veiled bailout plan.” Institutional Shareholder Services said Tesla would be able to bridge <rule1>cash-burning</rule1> SolarCity’s funding gap and called the deal a “necessary step” in the electric-car maker’s push to become an integrated sustainable energy company.
+The deal drew mixed recommendations from proxy advisory firms, with Institutional Shareholder Services giving its blessing and Glass Lewis & Co. rejecting it as a “thinly veiled bailout plan.” Institutional Shareholder Services said Tesla would be able to bridge <rule5>cash-burning</rule5> SolarCity’s funding gap and called the deal a “necessary step” in the electric-car maker’s push to become an integrated sustainable energy company.
 
 The combined company’s attention will be on <rule5>President-elect</rule5> Donald Trump’s policies. The real estate mogul has vowed to relax environmental regulations and has tapped Myron Ebell, a climate-change skeptic, to head his Environmental Protection Agency transition team.
 

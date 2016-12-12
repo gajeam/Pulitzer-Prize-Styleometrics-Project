@@ -1,11 +1,7 @@
-Burmese Days
-George Orwell
-
 It was in Burma, a <rule1>sodden</rule1> morning of the rains. A sickly light, like 
 yellow tinfoil, was slanting over the high walls into the jail yard. We 
 were waiting outside the condemned cells, a row of sheds fronted with 
-double bars, <rule1s>like small animal cages</rule1s>. Each cell measured about ten feet 
-by ten and was quite bare within except for a plank bed and a pot of 
+double bars, <rule1s>like small animal cages</rule1s>. Each cell measured about ten feet by ten and was quite bare within except for a plank bed and a pot of 
 drinking water. <rule4>In some of them brown silent men were squatting at the 
 inner bars, with their blankets draped round them.</rule4> These were the 
 condemned men, due to be hanged within the next week or two. 
