@@ -98,20 +98,29 @@ def create_regex_strings():
 
 # In[22]:
 
-def metaphor_features(word):
+def metaphor_features(wordphrase):
     features = {}
-    word = word.lower()
-    features['POS'] = word[0]
-#     features['last'] = word[-1]
-#     features['last 2'] = word[-2]
-#     features['first 3'] = word[:3]
-#     features['first'] = word[:1]
-#     features['length'] = len(word)
-#     features['starts with K'] = word.startswith('k')
-#     features['ends with i'] = word.endswith('i')
-#     features['ends with a'] = word.endswith('a')
-#     features['double letter'] = double_letter(word)
+    POS_bucket = []
+    wordphrase = wordphrase.lower()
+#     for line in wordphrase:
+#         for word in line:
+#             POS = nltk.pos_tag(word)
+#             POS_bucket.append(POS[0][1])
+    features = featurize_pos_list(get_pos_list_from_ngram(wordphrase), features)
     return features
+
+def featurize_pos_list(pos_list, features):
+    for pos in pos_list:
+        if pos in features.keys():
+            features[pos] += 1
+        else:
+            features[pos] = 1
+    return features
+
+def get_pos_list_from_ngram(ngram):
+    ngram_tagged = nltk.pos_tag(ngram.split())
+    pos_list = [tagged_word[1] for tagged_word in ngram_tagged]
+    return pos_list
 
 
 # In[20]:
