@@ -13,7 +13,7 @@ with(codecs.open('index.html')) as f:
 
 
 def append_text_marked_with_rules(text, rules, doc):
-	text = orwell.marked_html_from_text(text, rules)	
+	text = orwell.marked_html_from_text(text, rules)
 	soup = BeautifulSoup(doc, 'html.parser')
 	analyzed_text = soup.find(id='analyzed_text')
 	analyzed_text.append(BeautifulSoup(text, 'html.parser'))
@@ -22,7 +22,8 @@ def append_text_marked_with_rules(text, rules, doc):
 
 @app.route("/")
 def tag_text():
-	input_text = request.args.get('text', '')
+	input_text = request.args.get('text', ' ')
+	print(input_text)
 	rules = request.args.get('rules', '').split(',')
 	return append_text_marked_with_rules(input_text, rules, html_doc)
 
@@ -42,4 +43,4 @@ def mark_file():
 
 
 if __name__ == "__main__":
-    app.run()
+    app.run(host='0.0.0.0')
